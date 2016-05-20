@@ -1,0 +1,147 @@
+/*opaque nav*/
+.opaque-navbar {
+  background-color: transparent;
+  transition: background-color .5s ease 0s; }
+
+.opaque-navbar.opaque {
+  background-color: #37221D;
+  height: 60px;
+  transition: background-color .5s ease 0s; }
+
+@media (max-width: 768px) {
+  .opaque-navbar {
+    background-color: #37221D;
+    height: 60px;
+    transition: background-color .5s ease 0s; }
+
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #37221D;
+    background-color: #37221D;
+    opacity: 0.8; } }
+.loaded article {
+  opacity: 1; }
+
+article {
+  opacity: 0;
+  /*El valor inicial de la opacidad del contenedor es 0, por medio de javascript haremos que aparezca al asignarle la clase .loaded_section*/
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s; }
+  article h1 {
+    opacity: 1;
+    position: relative;
+    z-index: 50;
+    color: white;
+    font-size: 70px; }
+
+.loading {
+  background: url("../wheel.gif") no-repeat;
+  background-size: 100px 100px; }
+
+@keyframes implode {
+  100% {
+    transform: scale(0); } }
+.pd-20 {
+  padding-top: 85px; }
+
+.hero {
+  font-family: 'Sahitya', serif;
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: black no-repeat 50% 50% fixed;
+  background-size: 100%;
+  overflow: hidden; }
+  .hero h4 {
+    font-family: 'Satisfy', cursive;
+    font-size: 40px;
+    color: #FC484E;
+    font-weight: bold; }
+  .hero.fadeout .optional-rainbow {
+    display: block; }
+  .hero.fadeout:before {
+    display: none; }
+  .hero:before {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    content: "";
+    background: -webkit-linear-gradient(#DE8960, #A56961, #FC484E);
+    background: -moz-linear-gradient(left, #DE8960, #A56961, #FC484E);
+    background: linear-gradient(#DE8960, black, #FC484E);
+    opacity: 0.4; }
+  .hero:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 6px;
+    background: -webkit-linear-gradient(left, #DE8960, black, #FC484E);
+    background: -moz-linear-gradient(left, #DE8960, black, #FC484E);
+    background: linear-gradient(left, #DE8960, black, #FC484E); }
+  .hero .optional-rainbow {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(#DE8960, black, #FC484E);
+    background: -moz-linear-gradient(#DE8960, black, #FC484E);
+    background: linear-gradient(#DE8960, black, #FC484E);
+    opacity: 0.4;
+    z-index: 4; }
+
+/*nav*/
+#sobre_mi {
+  text-align: center; }
+
+#sobre_mi img {
+  width: 240px;
+  height: 320px; }
+
+/*MIXIN NAV*/
+.navbar-default {
+  border: none;
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: transparent;
+  color: transparent; }
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a {
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: transparent;
+  color: white; }
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: transparent;
+  color: white; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: transparent;
+  color: #FC484E; }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  border-radius: 3px;
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: #FC484E;
+  color: white; }
+
+.navbar-default .navbar-toggle:hover {
+  font-weight: bold;
+  font-family: 'Satisfy', cursive;
+  background-color: #FC484E;
+  color: transparent; }
+
+/*# sourceMappingURL=main.css.map */
