@@ -1,3 +1,4 @@
+new WOW().init();
 /*!
  * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -61,11 +62,6 @@ class ParallaxHero{
       $(`${this.element} h1`).css({
         'top':`${scrolled * 0.7}px`,
         'opacity':`${1-(scrolled/$(this.element).outerHeight())*1.8}`
-      });
-      //Move & zoom the hero background image
-      $(this.element).css({
-        'background-position':`50% calc(50% + ${scrolled * 0.2}px)`,
-        'background-size': `${200 + (scrolled*50/$(this.element).outerHeight())}%`
       });
       //Fade the extra rainbow div just in case it's visible
       $(`${this.element} .optional-rainbow`).css('opacity', `${0.4 + (scrolled/$(this.element).outerHeight())}`);

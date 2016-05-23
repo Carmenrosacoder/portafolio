@@ -1,61 +1,58 @@
 doctype html
 html
-    head
-        tittle
-        meta(charset='utf-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
-        link(href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css')
-        link(href='css/bootstrap.min.css', rel='stylesheet')
-        link(rel="stylesheet" href="css/main.css")
-    body(class='loading')
-        header
-            // Fixed navbar
-            .navbar.navbar-default.navbar-fixed-top.opaque-navbar(role='navegacion')
-              .container
-                .navbar-header
-                  button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-                    span.sr-only Toggle navigation
-                    span.icon-bar
-                    span.icon-bar
-                    span.icon-bar
-                  a.navbar-brand() Carmenrosa Arias
-                .navbar-collapse.collapse
-                  ul.nav.navbar-nav.navbar-right
-                    li
-                      a(href='#sobre_mi') SOBRE MÍ
-                    li
-                      a(href='#portf') PORTFOLIO
-                    li
-                      a(href='#about') ABOUT
-                    li
-                        a(href='#ourteam') TEAM
-                    li
-                        a(href='#contact') CONTACT
-        article.hero.vertical-center
-            .container.text-center.pd-20
-                h1 PROFESIONAL INNOVADORA EN DESARROLLO TECNOLÓGICO
-                h4 Front-end Developer
-        section(id='sobre_mi')
-            .container
-                h1 CARMENROSA ARIAS ARIAS
-                .row 
-                    img(src='B612_20160508_135856.jpg' class='img-circle')
-                    h3 Sobre mí
-        section(id='sobre_mi')
-            .container
-                h1 CARMENROSA ARIAS ARIAS
-                .row 
-                    img(src='B612_20160508_135856.jpg' class='img-circle')
-                    h3 Sobre mí
-        section(id='sobre_mi')
-            .container
-                h1 CARMENROSA ARIAS ARIAS
-                .row 
-                    img(src='B612_20160508_135856.jpg' class='img-circle')
-                    h3 Sobre mí
-        
-        script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js") 
-        script(src="http://code.jquery.com/ui/1.10.3/jquery-ui.js")
-        script(src="js/bootstrap.min.js")
-        script(src="js/main.js")
+	head
+		tittle
+		meta(charset='utf-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css')
+		link(href='css/bootstrap.min.css', rel='stylesheet')
+		link(rel="stylesheet" href="css/main.css")
+		link(rel="stylesheet" href="css/animate.css")
+		script(src="js/wow.min.js")
+    
+	body(class='loading')
+		header
+			// Fixed navbar
+			.navbar.navbar-default.navbar-fixed-top.opaque-navbar(role='navegacion')
+				.container
+					.navbar-header
+						button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand() Carmenrosa Arias
+					.navbar-collapse.collapse
+						ul.nav.navbar-nav.navbar-right
+							li
+								a(href='#sobre_mi') SOBRE MÍ
+							li
+								a(href='#portf') PORTFOLIO
+							li
+								a(href='#about') ABOUT
+							li
+								a(href='#ourteam') TEAM
+							li
+								a(href='#contact') CONTACT
+		article.hero.vertical-center
+			.container.text-center.pd-20
+				h1 CARMENROSA ARIAS
+				h4 Front-end Developer
+		section(id='sobre_mi')
+			.container
+				.row 
+					h1.title Sobre mí
+					.col-lg-6
+						img(src="B612_20160508_135856.jpg" class="img-circle")
+					div(class='col-lg-6 biografia wow fadeInRight' data-wow-duration="600ms" data-wow-delay="600ms")
+						p Hola!! mi nombre es Carmenrosa ,tengo 20 años y soy desarrolladora Front-end ,además estudio Ingeniería de Sistemas. Soy una chica muy innovadora y con capacidades de hacer Diseño Web Responsivo , conocimientos en Gestión de Proyectos y Metodologías Ágiles. Me encanta la programación y estoy segura que seré una gran programadora Back-end.
+		section(id='bkg-medio')
+		section(id='skills')
+			.container
+				.row
+					h1.title Mis Habilidades
+
+		script(src="js/jquery.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/main.js")

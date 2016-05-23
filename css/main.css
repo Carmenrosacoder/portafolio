@@ -1,3 +1,7 @@
+section {
+  text-align: center;
+  padding: 50px; }
+
 /*opaque nav*/
 .opaque-navbar {
   background-color: transparent;
@@ -37,11 +41,8 @@ article {
 
 .loading {
   background: url("../wheel.gif") no-repeat;
-  background-size: 100px 100px; }
+  background-size: 100px; }
 
-@keyframes implode {
-  100% {
-    transform: scale(0); } }
 .pd-20 {
   padding-top: 85px; }
 
@@ -49,10 +50,9 @@ article {
   font-family: 'Sahitya', serif;
   position: relative;
   width: 100%;
-  height: 900px;
-  background: black no-repeat 50% 50% fixed;
-  background-size: 100%;
-  overflow: hidden; }
+  height: 650px;
+  background: url("../frontend-developer.jpg") no-repeat 0% 0% fixed;
+  background-size: cover; }
   .hero h4 {
     font-family: 'Satisfy', cursive;
     font-size: 40px;
@@ -80,7 +80,6 @@ article {
     left: 0;
     content: "";
     width: 100%;
-    height: 6px;
     background: -webkit-linear-gradient(left, #DE8960, black, #FC484E);
     background: -moz-linear-gradient(left, #DE8960, black, #FC484E);
     background: linear-gradient(left, #DE8960, black, #FC484E); }
@@ -99,11 +98,19 @@ article {
 
 /*nav*/
 #sobre_mi {
-  text-align: center; }
+  background: url("../symphony.png");
+  background-attachment: fixed; }
+  #sobre_mi .biografia {
+    padding: 100px; }
 
 #sobre_mi img {
   width: 240px;
   height: 320px; }
+
+#bkg-medio {
+  background-image: url("../captura-atom.png");
+  height: 200px;
+  background-attachment: fixed; }
 
 /*MIXIN NAV*/
 .navbar-default {
