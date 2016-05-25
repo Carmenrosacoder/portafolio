@@ -48,7 +48,6 @@ window.onload=()=>{
   const ph = new ParallaxHero('.hero')
 
 }
-
 class ParallaxHero{
   constructor(q){
     this.element = q;
@@ -58,8 +57,8 @@ class ParallaxHero{
   bindScroll(){
     $(window).on('scroll', ()=>{
       const scrolled = $(window).scrollTop();
-      //Move & fade the H1 on scroll.
-      $(`${this.element} h1`).css({
+      //Move & fade the H2 on scroll.
+      $(`${this.element} h2`).css({
         'top':`${scrolled * 0.7}px`,
         'opacity':`${1-(scrolled/$(this.element).outerHeight())*1.8}`
       });
@@ -78,3 +77,8 @@ class ParallaxHero{
   }
 
 }
+$(".bar").each(function(){
+  $(this).find(".bar-inner").animate({
+    width: $(this).attr("data-width")
+  },2000)
+});

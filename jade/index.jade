@@ -5,12 +5,20 @@ html
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
 		link(href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css')
 		link(href='css/bootstrap.min.css', rel='stylesheet')
 		link(rel="stylesheet" href="css/main.css")
 		link(rel="stylesheet" href="css/animate.css")
 		script(src="js/wow.min.js")
-    
+		mixin skill(name , porcentaje , data)
+			.bar-1
+				.titlee
+					p= name
+				.bar(data-width=data)
+					.bar-inner
+					.bar-percent
+						p= porcentaje
 	body(class='loading')
 		header
 			// Fixed navbar
@@ -22,22 +30,22 @@ html
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand() Carmenrosa Arias
+						a.navbar-brand()
 					.navbar-collapse.collapse
 						ul.nav.navbar-nav.navbar-right
 							li
 								a(href='#sobre_mi') SOBRE MÍ
 							li
-								a(href='#portf') PORTFOLIO
+								a(href='#skills') HABILIDADES
 							li
-								a(href='#about') ABOUT
+								a(href='#portfolio') PORTAFOLIO
 							li
 								a(href='#ourteam') TEAM
 							li
 								a(href='#contact') CONTACT
 		article.hero.vertical-center
 			.container.text-center.pd-20
-				h1 CARMENROSA ARIAS
+				h2 CARMENROSA ARIAS
 				h4 Front-end Developer
 		section(id='sobre_mi')
 			.container
@@ -52,7 +60,61 @@ html
 			.container
 				.row
 					h1.title Mis Habilidades
-
+					.col-lg-4
+						.row
+							.col-lg-6
+							.col-lg-6
+						img(src="HTML5.png")
+						+skill("HTML5","90%","90%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					.col-lg-4
+						img(src="CSS.png")
+						+skill("CSS3","90%","90%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					.col-lg-4
+						img(src="HTML5.png")
+						+skill("JAVASCRIPT","65%","65%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				.row
+					h1.title Mis Habilidades
+					.col-lg-4
+						img(src="HTML5.png")
+						+skill("Bootstrap","80%","80%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					.col-lg-4
+						img(src="HTML5.png")
+						+skill("CSS3","90%","90%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					.col-lg-4
+						img(src="HTML5.png")
+						+skill("JAVASCRIPT","65%","65%")
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		
+		section(id='portfolio')
+			.container
+								.row
+									h1.title Mis Trabajos
+									.col-lg-4
+										a(href="")
+											img(src="portafolio/agency.PNG")
+									.col-lg-4
+										a(href="")
+											img(src="portafolio/loveBlog.PNG")
+									.col-lg-4
+									.col-lg-3
+										
+		section(id='contactame')
+			.container
+								.row
+									h1.title Mis Trabajos
+									.col-lg-3 
+										
+									.col-lg-3
+										
+									.col-lg-3
+									
+									.col-lg-3
+									
 		script(src="js/jquery.js")
 		script(src="js/bootstrap.min.js")
 		script(src="js/main.js")
