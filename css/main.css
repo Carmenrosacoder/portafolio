@@ -1,15 +1,20 @@
 section {
   text-align: center;
-  padding: 80px; }
+  padding: 100px; }
   section .title {
-    font-size: 45px; }
+    font-size: 60px;
+    -webkit-text-stroke: 1px #252525;
+    font-weight: 500; }
 
 h1 {
   font-family: 'Satisfy', cursive; }
 
 p {
   font-family: 'Muli', sans-serif;
-  font-size: 15px; }
+  font-size: 17px;
+  color: #252525;
+  letter-spacing: 1px;
+  line-height: 27px; }
 
 .navbar-brand {
   font-size: 30px; }
@@ -20,19 +25,21 @@ p {
   transition: background-color .5s ease 0s; }
 
 .opaque-navbar.opaque {
-  background-color: black;
+  background-color: #252525;
   height: 60px;
-  transition: background-color .5s ease 0s; }
+  transition: background-color .5s ease 0s;
+  margin: 0px;
+  padding: 0px; }
 
 @media (max-width: 768px) {
   .opaque-navbar {
-    background-color: black;
+    background-color: #252525;
     height: 60px;
     transition: background-color .5s ease 0s; }
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: black;
-    background-color: black;
+    border-color: #252525;
+    background-color: #252525;
     opacity: 0.8; } }
 .loaded article {
   opacity: 1; }
@@ -114,14 +121,15 @@ article {
   background: url("../symphony.png");
   background-attachment: fixed; }
   #sobre_mi .biografia {
-    padding: 100px; }
+    padding: 50px; }
 
 #sobre_mi img {
-  width: 240px;
-  height: 320px; }
+  box-shadow: 4px 5px 8px  #252525;
+  width: 280px;
+  height: 280px; }
 
 #bkg-medio {
-  background-image: url("../captura-atom.png");
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../captura-atom.png");
   height: 200px;
   background-attachment: fixed; }
 
@@ -132,39 +140,44 @@ article {
 .navbar-default {
   border: none;
   font-size: 14px;
+  margin: 40px;
+  padding: 20px;
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
-  background-color: transparent;
+  font-family: 'Francois One', sans-serif;
+  background-color: #252525;
   color: transparent; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a {
-  font-weight: bold;
   font-family: 'Satisfy', cursive;
+  font-weight: bold;
+  font-family: 'Francois One', sans-serif;
   background-color: transparent;
   color: white; }
 
 .navbar-default .navbar-nav > li > a {
+  font-weight: normal;
+  letter-spacing: 2px;
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Francois One', sans-serif;
   background-color: transparent;
   color: white; }
 
 .navbar-default .navbar-nav > li > a:hover {
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Francois One', sans-serif;
   background-color: transparent;
   color: #FC484E; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   border-radius: 3px;
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Francois One', sans-serif;
   background-color: #FC484E;
   color: white; }
 
 .navbar-default .navbar-toggle:hover {
   font-weight: bold;
-  font-family: 'Satisfy', cursive;
+  font-family: 'Francois One', sans-serif;
   background-color: #FC484E;
   color: transparent; }
 
@@ -209,5 +222,9 @@ article {
   font-size: 18px;
   font-weight: bold;
   font-family: "sans-serif"; }
+
+/**/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: #e7e7e7; }
 
 /*# sourceMappingURL=main.css.map */

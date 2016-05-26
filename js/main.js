@@ -70,6 +70,7 @@ class ParallaxHero{
       $('.selectable').toggleClass('on');
       $('.hero').toggleClass('fadeout');
     });
+    $('')
   }
   sampleScroll(){
     //move it so that it shows in portfolio
