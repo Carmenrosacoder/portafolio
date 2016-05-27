@@ -46,6 +46,8 @@ html
 		
 		article.hero.vertical-center
 			.container.text-center.pd-20
+				a(href='')
+					img(src="logo.png" class="wow pulse" data-wow-iteration="10" data-wow-duration="900ms")
 				h2 CARMENROSA ARIAS
 				h4 Front-end Developer
 		section(id='sobre_mi')
@@ -95,9 +97,12 @@ html
 			.container
 								.row
 									h1.title Mis Trabajos
-									.col-lg-4
-										a(href="")
-											img(src="portafolio/agency.PNG")
+									.col-lg-4.client
+										.client-front
+											a(href="")
+												img(src="portafolio/agency.PNG")
+										.client-back
+											p description
 									.col-lg-4
 										a(href="")
 											img(src="portafolio/loveBlog.PNG")

@@ -27,7 +27,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(window).scroll(function() {
-    if($(this).scrollTop() > 220)  /*height in pixels when the navbar becomes non opaque*/
+    if($(this).scrollTop() > 563)  /*height in pixels when the navbar becomes non opaque*/
     {
         $('.opaque-navbar').addClass('opaque');
     } else {
