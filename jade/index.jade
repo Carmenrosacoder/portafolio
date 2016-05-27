@@ -4,12 +4,14 @@ html
 		tittle
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel='stylesheet' href='font-awesome/css/font-awesome.min.css')
 		link(href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css')
 		link(href='css/bootstrap.min.css', rel='stylesheet')
 		link(rel="stylesheet" href="css/main.css")
 		link(rel="stylesheet" href="css/animate.css")
+		link(rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css")
 		script(src="js/wow.min.js")
 		mixin skill(name , porcentaje , data)
 			.bar-1
@@ -34,15 +36,20 @@ html
 					.navbar-collapse.collapse
 						ul.nav.navbar-nav.navbar-right.navL
 							li
-								a(href='#sobre_mi') SOBRE MÍ
+								a(href='index.html')
+									span(class="lnr lnr-home")
 							li
-								a(href='#skills') HABILIDADES
+								a(href='#sobre_mi')
+									span(class="lnr lnr-user")
 							li
-								a(href='#portfolio') PORTAFOLIO
+								a(href='#skills') 
+									span(class="lnr lnr-magic-wand")
 							li
-								a(href='#ourteam') TEAM
+								a(href='#portfolio') 
+									span(class="lnr lnr-briefcase")
 							li
-								a(href='#contact') CONTACT
+								a(href='#contact')
+									span(class="lnr lnr-envelope")
 		
 		article.hero.vertical-center
 			.container.text-center.pd-20
@@ -63,35 +70,50 @@ html
 			.container
 				.row
 					h1.title Mis Habilidades
-					.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;")
-						.row
-							.col-lg-6
-								img(src="HTML5.png")
-							.col-lg-6
-								+skill("HTML5","90%","90%") 
-					.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;")
-						.row
-							.col-lg-6
-								img(src="HTML5.png")
-							.col-lg-6
-								+skill("CSS3","90%","90%")
-					.col-lg-4(class="wow_imgage end wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;")
-						.row
-							.col-lg-6
-								img(src="HTML5.png")
-							.col-lg-6
-								+skill("JAVASCRIPT","65%","65%")
-				.row
-					h1.title Contáctame
-					.col-lg-4
-						img(src="HTML5.png")
-						
-					.col-lg-4
-						img(src="HTML5.png")
-				
-					.col-lg-4
-						img(src="HTML5.png")
-						
+						.cajaskill
+							.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="HTML5.png")
+										.col-lg-6
+											+skill("HTML5","90%","90%") 
+							.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="HTML5.png")
+										.col-lg-6
+											+skill("CSS3","90%","90%")
+							.col-lg-4(class="wow_imgage end wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="HTML5.png")
+										.col-lg-6
+											+skill("JAVASCRIPT","65%","65%")
+						.cajaskill
+							.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="CSS.png")
+										.col-lg-6
+											+skill("HTML5","90%","90%") 
+							.col-lg-4(class="wow_imgage wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="HTML5.png")
+										.col-lg-6
+											+skill("CSS3","90%","90%")
+							.col-lg-4(class="wow_imgage end wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;")
+								.caja
+									.row
+										.col-lg-6
+											img(src="HTML5.png")
+										.col-lg-6
+											+skill("JAVASCRIPT","65%","65%")
 		
 		section(id='portfolio')
 			.container
