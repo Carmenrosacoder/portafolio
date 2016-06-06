@@ -1,7 +1,9 @@
 section {
   text-align: center;
-  padding: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
   section .title {
+    padding: 10px;
     font-size: 60px;
     -webkit-text-stroke: 1px #252525;
     font-weight: 500; }
@@ -16,6 +18,9 @@ p {
   letter-spacing: 1px;
   line-height: 27px; }
 
+.x {
+  display: none; }
+
 .navbar-brand {
   font-size: 30px; }
 
@@ -25,7 +30,7 @@ p {
   transition: background-color .10s ease 10s; }
 
 .opaque-navbar.opaque {
-  background-color: #252525;
+  background: rgba(66, 190, 167, 0.6);
   height: 80px;
   transition: background-color .5s ease 0s;
   margin: 0px;
@@ -34,13 +39,13 @@ p {
 
 @media (max-width: 768px) {
   .opaque-navbar {
-    background-color: #252525;
+    background: rgba(66, 190, 167, 0.6);
     height: 60px;
     transition: background-color .5s ease 0s; }
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #252525;
-    background-color: #252525;
+    background: rgba(66, 190, 167, 0.6);
     opacity: 0.8; } }
 .loaded article {
   opacity: 1; }
@@ -53,30 +58,29 @@ article {
   -o-transition: opacity 2s;
   transition: opacity 2s; }
   article h2 {
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Satisfy', cursive;
     opacity: 1;
     position: relative;
     z-index: 50;
-    color: #FC484E;
-    font-size: 75px;
-    -webkit-text-stroke: 1px #252525; }
+    color: #42BEA7;
+    font-size: 85px;
+    -webkit-text-stroke: 1px  #42BEA7; }
 
 .loading {
   background: url("../wheel.gif") no-repeat center 280px;
   background-size: 100px; }
 
 .pd-20 {
-  padding-top: 150px; }
+  padding-top: 200px; }
 
 .hero {
-  font-family: 'Sahitya', serif;
   position: relative;
   width: 100%;
   height: 667px;
-  background: url("../frontend-developer.jpg") no-repeat 0% 0% fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../frontend-developer.jpg") no-repeat 0% 0% fixed;
   background-size: cover; }
   .hero h4 {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Sanchez', serif;
     font-size: 40px;
     color: white;
     font-weight: bold; }
@@ -91,20 +95,20 @@ article {
     width: 100%;
     z-index: 5;
     content: "";
-    background: linear-gradient(#DE8960, black, #FC484E);
+    background: linear-gradient(#42BEA7, #42BEA7, transparent);
     opacity: 0.1; }
 
 /*nav*/
 #sobre_mi {
   background: url("../symphony.png");
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 160px; }
   #sobre_mi .biografia {
     padding: 50px; }
 
 #sobre_mi img {
   box-shadow: 4px 5px 8px  #252525;
-  width: 280px;
-  height: 280px; }
+  width: 50%; }
 
 #bkg-medio {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../captura-atom.png");
@@ -113,7 +117,8 @@ article {
   background-attachment: fixed; }
 
 #portfolio img {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 4px 5px 8px  #252525; }
 
 /*MIXIN NAV*/
 .navbar-default {
@@ -146,32 +151,23 @@ article {
   font-weight: bold;
   font-family: 'Francois One', sans-serif;
   background-color: transparent;
-  color: #FC484E; }
+  color: #42BEA7; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   border-radius: 3px;
   font-weight: bold;
   font-family: 'Francois One', sans-serif;
-  background-color: #FC484E;
+  background-color: #252525;
   color: white; }
 
 .navbar-default .navbar-toggle:hover {
   font-weight: bold;
   font-family: 'Francois One', sans-serif;
-  background-color: #FC484E;
+  background-color: #42BEA7;
   color: transparent; }
 
-#skills {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); }
-  #skills .cajaskill {
-    padding: 20px; }
-  #skills img {
-    width: 100%; }
-  #skills .caja {
-    margin: 10px;
-    background-color: ghostwhite;
-    padding: 25px;
-    border-radius: 12px; }
+#skills .cajaskill {
+  padding: 20px; }
 
 .titlee {
   font-weight: bold;
@@ -182,10 +178,13 @@ article {
 .bar {
   width: 90%;
   height: 35px;
-  background: #fff;
+  background: black;
   border-radius: 5px;
+  color: white;
   position: relative;
   transition: all 2s linear; }
+  .bar p {
+    color: white; }
 
 .bar-1,
 .my-skills {
@@ -194,9 +193,9 @@ article {
 
 .bar-inner {
   width: 0;
-  height: 35px;
+  height: 33px;
   line-height: 35px;
-  background: #db3a34;
+  background: #42BEA7;
   border-radius: 5px 0 0 5px; }
 
 .bar-percent {
@@ -214,10 +213,54 @@ article {
   float: left;
   margin-left: 136px; }
 
+#contactame {
+  /*background-color: black;
+  background-image:linear-gradient(rgba(0, 0, 0, -0.4), rgba(0, 0, 0, 0.5)), url("../job.png");*/ }
+  #contactame i {
+    color: #252525;
+    font-size: 140px; }
+  #contactame i:hover {
+    color: rgba(66, 190, 167, 0.6); }
+  #contactame .iconmin {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 70px; }
+
 @media (min-width: 768px) {
   .navbar-right {
     float: none !important;
     margin-right: 0px !important;
     padding: 7px; } }
+@media screen and (max-width: 1200px) {
+  article h2 {
+    font-size: 40px; }
+
+  .navbar-nav > li {
+    margin-left: 50px; } }
+.ih-item.square.effect13.colored .info {
+  background: rgba(66, 190, 167, 0.6); }
+
+footer {
+  background-color: #252525;
+  padding: 20px; }
+  footer p {
+    color: white;
+    font-size: 15px; }
+
+.ih-item.square {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  border: none;
+  box-shadow: none;
+  padding: 0px; }
+
+#frase {
+  background-color: black;
+  color: white; }
+
+.navbar {
+  border: none;
+  margin-bottom: 8px; }
 
 /*# sourceMappingURL=main.css.map */

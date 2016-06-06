@@ -27,7 +27,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(window).scroll(function() {
-    if($(this).scrollTop() > 563)  /*height in pixels when the navbar becomes non opaque*/
+    if($(this).scrollTop() > 573)  /*height in pixels when the navbar becomes non opaque*/
     {
         $('.opaque-navbar').addClass('opaque');
     } else {
@@ -40,6 +40,8 @@ $(window).load(function() {
     // start up after 2sec no matter what
     window.setTimeout(function(){
         $('body').removeClass("loading").addClass('loaded');
+        $('.navbar-default').removeClass("x").addClass('navbar');
+
     }, 2000);
 });
 

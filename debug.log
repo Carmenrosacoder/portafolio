@@ -1,0 +1,16 @@
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe80a000, size 0x230 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe809000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe806000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6df000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6dc000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6d9000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6d6000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6d3000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6d0000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6cd000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6ca000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6c7000, size 0xf84 fully unreadable
+[0605/110019:ERROR:process_info.cc(608)] range at 0xfe6c4000, size 0xf84 fully unreadable
+[0605/110020:ERROR:process_reader_win.cc(232)] ReadMemory at 0xc46000 of 40960 bytes failed: Solo se completó una parte de una solicitud ReadProcessMemory o WriteProcessMemory. (0x12B)
+[0605/110020:ERROR:crash_report_exception_handler.cc(102)] WriteEverything failed
+[0605/110020:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess, ntstatus=-1073741558
