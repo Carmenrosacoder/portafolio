@@ -1,13 +1,17 @@
 doctype html
 html
 	head
-		tittle
+		tittle 
 		meta(charset='utf-8')
 		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		link(rel="shortcut icon" href="/favicon.ico" type="image/x-icon")
+		link(rel="icon" href="/favicon.ico" type="image/x-icon")
 		link(rel='stylesheet' href='font-awesome/css/font-awesome.min.css')
+		link(href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css')
 		link(href='https://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css')
+
 		link(href="css/ihover.min.css" rel="stylesheet")
 		link(href='css/bootstrap.min.css', rel='stylesheet')
 		link(rel="stylesheet" href="css/main.css")
@@ -33,11 +37,13 @@ html
 							span.icon-bar
 							span.icon-bar
 							span.icon-bar
-						a.navbar-brand()
+						a.navbar-brand
+							span Carmenrosa Arias
+							
 					.navbar-collapse.collapse
 						ul.nav.navbar-nav.navbar-right.navL
 							li
-								a(href='index.html')
+								a(href='Carmenrosa.html')
 									span(class="lnr lnr-home")
 							li
 								a(href='#sobre_mi')
@@ -57,16 +63,17 @@ html
 				.row
 					.col-lg-12.col-md-12.col-sm-12.col-xs-12
 						a(href='')
+						h4 Bienvenido a mi portafolio me llamo 
 						h2 Carmenrosa Arias
-						h4 Front-end Developer
+						h4 Front-end Developer y Estudiante de Ingeniería de Sistemas 
 		section(id='sobre_mi')
 			.container
 				.row 
 					h1.title Sobre mí
-					.col-lg-6.col-md-6.col-sm-12.col-xs-12
-						img(src="perfil.jpg" class="img-circle wow fadeInLeft" data-wow-duration="600ms" data-wow-delay="600ms")
 					div(class='col-lg-6 col-md-6 col-sm-12 col-xs-12 biografia wow fadeInRight' data-wow-duration="600ms" data-wow-delay="600ms")
-						p Hola!!! mi nombre es Carmenrosa, tengo 20 años y soy desarrolladora Front-end. Además estudio Ingeniería de Sistemas. Soy una joven innovadora y con capacidades de hacer Diseño Web Responsivo con conocimientos en Gestión de Proyectos y Metodologías Ágiles. 
+						p Hola!!! mi nombre es Carmenrosa, tengo 20 años y soy desarrolladora Front-end. Además estudio Ingeniería de Sistemas en la Universidad Nacional del Callao. Soy una joven innovadora, autodidácta, con conocimientos en Gestión de Proyectos y Metodologías Ágiles. Me apasiona el mundo tecnológico, los números y la música. Mi experiencia de trabajo en equipo ha permitido mi desarrollo personal y profesional, contáctame a través de mis redes sociales.  
+					.col-lg-6.col-md-6.col-sm-12.col-xs-12
+						img(src="perfil.jpg" class=" wow fadeInLeft" data-wow-duration="600ms" data-wow-delay="600ms")
 		section(id='frase' class="text-center")
 			h2 "Si buscas resultados distintos, no hagas siempre lo mismo"
 			p - Albert Einstein
@@ -74,43 +81,31 @@ html
 			.container
 				.row
 					h1.title Mis Habilidades
+					.col-lg-4
 						.cajaskill
-							.row
-								.col-lg-3
-									p Html5
-								.col-lg-9(class="wow_imgage wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;")
-										+skill("","90%","90%") 
-							.row
-								.col-lg-3
-									p Css3
-								.col-lg-9(class="wow_imgage wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;")
-											+skill("","90%","90%")
-							.row
-								.col-lg-3
-									p JavaScript
-								.col-lg-9(class="wow_imgage end wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;")
-											+skill("","45%","45%")
-							.row
-								.col-lg-3
-									p Jade
-								.col-lg-9(class="wow_imgage wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; -webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;")
-											+skill("","70%","70%") 
-							.row
-								.col-lg-3
-									p Sass
-								.col-lg-9(class="wow_imgage wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; -webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;")
-											+skill("","50%","50%")
-							.row
-								.col-lg-3
-									p Bootstrap
-								.col-lg-9(class="wow_imgage end wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; -webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;")
-											+skill("","85%","85%")
+							img(src="skills/html5.png")
+					.col-lg-4
+						.cajaskill
+							img(src="skills/css3.png")
+					.col-lg-4
+						.cajaskill
+							img(src="skills/js.png")
+				.row
+					.col-lg-4
+						.cajaskill
+							img(src="skills/sass.png")
+					.col-lg-4
+						.cajaskill
+							img(src="skills/Bootstrap.png")
+					.col-lg-4
+						.cajaskill
+							img(src="skills/jade.png")
 							hr
 		section(id='bkg-medio')								
 
 		section(id='portfolio')
 			.container
-				h1.title Mi Portafolio
+				h1.title Portafolio
 				.row
 					.col-lg-4.col-md-4.col-sm-4.col-xs-12
 							.ih-item.square.colored.effect13.left_to_right

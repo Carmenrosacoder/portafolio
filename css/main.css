@@ -1,18 +1,21 @@
 section {
   text-align: center;
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 50px; }
   section .title {
+    color: #00496F;
+    text-align: left;
     padding: 10px;
-    font-size: 60px;
-    -webkit-text-stroke: 1px #252525;
-    font-weight: 500; }
+    font-size: 55px;
+    -webkit-text-stroke: 3px #00496F;
+    font-weight: 500;
+    font-family: 'Cinzel', serif; }
 
 h1 {
   font-family: 'Satisfy', cursive; }
 
 p {
-  font-family: 'Muli', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 17px;
   color: #252525;
   letter-spacing: 1px;
@@ -30,7 +33,7 @@ p {
   transition: background-color .10s ease 10s; }
 
 .opaque-navbar.opaque {
-  background: rgba(66, 190, 167, 0.6);
+  background: black;
   height: 80px;
   transition: background-color .5s ease 0s;
   margin: 0px;
@@ -39,13 +42,12 @@ p {
 
 @media (max-width: 768px) {
   .opaque-navbar {
-    background: rgba(66, 190, 167, 0.6);
+    background: black;
     height: 60px;
     transition: background-color .5s ease 0s; }
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #252525;
-    background: rgba(66, 190, 167, 0.6);
+    background: black;
     opacity: 0.8; } }
 .loaded article {
   opacity: 1; }
@@ -62,9 +64,9 @@ article {
     opacity: 1;
     position: relative;
     z-index: 50;
-    color: #42BEA7;
-    font-size: 85px;
-    -webkit-text-stroke: 1px  #42BEA7; }
+    color: white;
+    font-size: 95px;
+    -webkit-text-stroke: 1px  white; }
 
 .loading {
   background: url("../wheel.gif") no-repeat center 280px;
@@ -77,10 +79,10 @@ article {
   position: relative;
   width: 100%;
   height: 667px;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("../frontend-developer.jpg") no-repeat 0% 0% fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../codigo.gif") no-repeat 0% 0% fixed;
   background-size: cover; }
   .hero h4 {
-    font-family: 'Sanchez', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
     font-size: 40px;
     color: white;
     font-weight: bold; }
@@ -95,19 +97,16 @@ article {
     width: 100%;
     z-index: 5;
     content: "";
-    background: linear-gradient(#42BEA7, #42BEA7, transparent);
     opacity: 0.1; }
 
 /*nav*/
 #sobre_mi {
-  background: url("../symphony.png");
-  background-attachment: fixed;
   padding-bottom: 160px; }
   #sobre_mi .biografia {
     padding: 50px; }
 
 #sobre_mi img {
-  box-shadow: 4px 5px 8px  #252525;
+  box-shadow: 14px 15px 23px black;
   width: 50%; }
 
 #bkg-medio {
@@ -124,12 +123,11 @@ article {
 .navbar-default {
   border: none;
   font-size: 14px;
-  margin: 40px;
   padding: 4px;
   transition: all 1s ease;
   font-weight: bold;
   font-family: 'Francois One', sans-serif;
-  background-color: #252525;
+  background-color: transparent;
   color: transparent; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a {
@@ -157,7 +155,7 @@ article {
   border-radius: 3px;
   font-weight: bold;
   font-family: 'Francois One', sans-serif;
-  background-color: #252525;
+  background-color: #00496F;
   color: white; }
 
 .navbar-default .navbar-toggle:hover {
@@ -166,8 +164,11 @@ article {
   background-color: #42BEA7;
   color: transparent; }
 
+#skills img {
+  width: 100%;
+  height: 250px; }
 #skills .cajaskill {
-  padding: 20px; }
+  padding: 80px; }
 
 .titlee {
   font-weight: bold;
@@ -175,43 +176,12 @@ article {
   font-family: sans-serif;
   color: #db3a34; }
 
-.bar {
-  width: 90%;
-  height: 35px;
-  background: black;
-  border-radius: 5px;
-  color: white;
-  position: relative;
-  transition: all 2s linear; }
-  .bar p {
-    color: white; }
-
-.bar-1,
-.my-skills {
-  width: 80%;
-  margin: 10px auto 25px; }
-
-.bar-inner {
-  width: 0;
-  height: 33px;
-  line-height: 35px;
-  background: #42BEA7;
-  border-radius: 5px 0 0 5px; }
-
-.bar-percent {
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "sans-serif"; }
-
 .lnr {
   font-size: 30px; }
 
 .navbar-nav > li {
   float: left;
-  margin-left: 136px; }
+  margin-left: 110px; }
 
 #contactame {
   /*background-color: black;
@@ -220,7 +190,7 @@ article {
     color: #252525;
     font-size: 140px; }
   #contactame i:hover {
-    color: rgba(66, 190, 167, 0.6); }
+    color: #00496F; }
   #contactame .iconmin {
     padding-top: 20px;
     text-align: center;
@@ -238,7 +208,7 @@ article {
   .navbar-nav > li {
     margin-left: 50px; } }
 .ih-item.square.effect13.colored .info {
-  background: rgba(66, 190, 167, 0.6); }
+  background: #00496F; }
 
 footer {
   background-color: #252525;
@@ -256,11 +226,19 @@ footer {
   padding: 0px; }
 
 #frase {
-  background-color: black;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../line.gif") no-repeat 0% 0% fixed;
+  background-size: cover;
   color: white; }
 
 .navbar {
   border: none;
   margin-bottom: 8px; }
+
+.navbar-brand img {
+  width: 100%; }
+
+span {
+  font-size: 20px;
+  font-family: 'Cinzel', serif; }
 
 /*# sourceMappingURL=main.css.map */
