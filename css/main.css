@@ -41,6 +41,9 @@ p {
   transition: all 0.5s ease; }
 
 @media (max-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    color: white; }
+
   .opaque-navbar {
     background: black;
     height: 60px;
@@ -48,7 +51,10 @@ p {
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background: black;
-    opacity: 0.8; } }
+    opacity: 0.8; }
+
+  .opaque-navbar .navbar-nav > li > a {
+    color: white; } }
 .loaded article {
   opacity: 1; }
 
@@ -79,7 +85,7 @@ article {
   position: relative;
   width: 100%;
   height: 667px;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../codigo.gif") no-repeat 0% 0% fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../codigo.gif") no-repeat 0% 0% fixed;
   background-size: cover; }
   .hero h4 {
     font-family: 'PT Sans Narrow', sans-serif;
@@ -181,7 +187,7 @@ article {
 
 .navbar-nav > li {
   float: left;
-  margin-left: 110px; }
+  margin-left: 124px; }
 
 #contactame {
   /*background-color: black;
