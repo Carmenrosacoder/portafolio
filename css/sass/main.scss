@@ -231,12 +231,22 @@ article{
 @media screen and (max-width: 1200px) {
   article{
     h2{
-    font-size: 40px;
+    font-size: 50px;
   }}
+  section .title{
 
+      font-size: 45px;}
 .navbar-nav > li {
     margin-left: 50px;
-}
+}.hero{
+  position:relative;
+  width:100%;
+  height:667px;
+  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url('../bgmovil.jpg') no-repeat 0% 0% fixed;
+  background-size:cover;}
+  .pd-20 {
+      padding-top: 111px;
+  }
 }
 .ih-item.square.effect13.colored .info {
 
