@@ -41,10 +41,11 @@ p{
     margin:0px;
     padding:0px;
     transition: all 0.5s ease;
+    box-shadow: 1px 8px 12px #0a1223;
 }
 @media (max-width: 768px) {
-    .navbar-default .navbar-nav > li > a {
-        color:white;
+    .navbar-default .navbar-nav > li:hover {
+        background-color:#252525;
     }
   .opaque-navbar {
     background: black;
@@ -55,11 +56,9 @@ p{
     background:black;
     opacity: 0.8;
 }
-.opaque-navbar .navbar-nav > li > a {
-    color: white;
-}
-}
 
+
+}
 
 .loaded article {
     opacity: 1;
@@ -76,8 +75,7 @@ article{
       position: relative;
       z-index: 50;
       color: white;
-      font-size: 95px;
-      -webkit-text-stroke: 1px  white;
+      font-size: 120px;
       }
 }
 .loading {
@@ -93,7 +91,7 @@ article{
   position:relative;
   width:100%;
   height:667px;
-  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url('../codigo.gif') no-repeat 0% 0% fixed;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),url('../codigo.gif') no-repeat 0% 0% fixed;
   background-size:cover;
 
 
@@ -161,7 +159,7 @@ article{
     font-size: 14px;
     padding: 4px;
     transition: all 1s ease;
-    @include navbar_mixin(transparent,transparent);
+    @include navbar_mixin(transparent,white);
 }
 
 .navbar-default .navbar-brand , .navbar-default .navbar-nav .active > a{
@@ -174,7 +172,7 @@ article{
 }
 .navbar-default .navbar-nav > li > a:hover {
 
-    @include navbar_mixin(transparent ,#42BEA7);
+    @include navbar_mixin(transparent ,#00496F);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     border-radius: 3px;
@@ -183,7 +181,7 @@ article{
 }
 
 .navbar-default .navbar-toggle:hover{
-    @include navbar_mixin(#42BEA7,transparent);
+    @include navbar_mixin(#00496F,transparent);
 }
 #skills{
     img{width: 100%;height: 250px;}
@@ -223,7 +221,7 @@ font-size: 30px;}
     text-align: center;
     font-size: 70px;
   }
-
+    p{padding: 0px 150px;}
 }
 @media(min-width: 768px){
     .navbar-right{
@@ -232,26 +230,7 @@ font-size: 30px;}
         padding: 7px;
     }
   }
-@media screen and (max-width: 1200px) {
-  article{
-    h2{
-    font-size: 50px;
-  }}
-  section .title{
 
-      font-size: 35px;}
-.navbar-nav > li {
-    margin-left: 50px;
-}.hero{
-  position:relative;
-  width:100%;
-  height:667px;
-  background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)),url('../bgmovil.jpg') no-repeat 0% 0% fixed;
-  background-size:cover;}
-  .pd-20 {
-      padding-top: 111px;
-  }
-}
 .ih-item.square.effect13.colored .info {
 
     background: #00496F;
@@ -283,3 +262,29 @@ footer{
 .navbar-brand img{width: 100%;}
 span{font-size: 20px;font-family: 'Cinzel', serif;}
 .logos{padding: 60px;}
+@media screen and (max-width: 1200px) {
+    .logos {
+    padding: 20px;
+}
+    #contactame p{padding: 0px;}
+  article{
+    h2{
+    font-size: 50px;
+  }}
+  section .title{
+
+      font-size: 35px;}
+.navbar-nav > li {
+    margin-left: 50px;
+}.hero{
+  position:relative;
+  width:100%;
+  height:667px;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),url('../bgmovil.jpg') no-repeat 0% 0% fixed;
+  background-size:cover;
+    h4{font-size: 27px;}
+}
+  .pd-20 {
+      padding-top: 182px;
+  }
+}
