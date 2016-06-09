@@ -193,8 +193,7 @@ article {
   margin-left: 124px; }
 
 #contactame {
-  /*background-color: black;
-  background-image:linear-gradient(rgba(0, 0, 0, -0.4), rgba(0, 0, 0, 0.5)), url("../job.png");*/ }
+  padding-top: 10px; }
   #contactame i {
     color: #252525;
     font-size: 140px; }
@@ -257,13 +256,22 @@ span {
     padding: 0px; }
 
   article h2 {
-    font-size: 50px; }
+    font-size: 117px; }
 
   section .title {
     font-size: 35px; }
 
   .navbar-nav > li {
     margin-left: 50px; }
+
+  .pd-20 {
+    padding-top: 185px; } }
+@media screen and (max-width: 780px) {
+  article h2 {
+    font-size: 60px; }
+
+  .pd-20 {
+    padding-top: 100px; }
 
   .hero {
     position: relative;
@@ -272,9 +280,9 @@ span {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../bgmovil.jpg") no-repeat 0% 0% fixed;
     background-size: cover; }
     .hero h4 {
-      font-size: 27px; }
-
-  .pd-20 {
-    padding-top: 182px; } }
+      font-size: 30px; } }
+.ih-item.square.effect13 {
+  overflow: hidden;
+  padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */
