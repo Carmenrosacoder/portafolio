@@ -175,6 +175,12 @@ article {
   height: 250px; }
 #skills .cajaskill {
   padding: 80px; }
+#skills h3 {
+  color: #00496F;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px; }
+#skills .responsive {
+  padding-top: 24px; }
 
 .titlee {
   font-weight: bold;
