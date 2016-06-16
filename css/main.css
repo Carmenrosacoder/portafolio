@@ -1,288 +1,304 @@
-section {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px; }
-  section .title {
-    color: #00496F;
-    text-align: left;
-    padding: 10px;
-    font-size: 55px;
-    -webkit-text-stroke: 3px #00496F;
-    font-weight: 500;
-    font-family: 'Cinzel', serif; }
+section
+  text-align: center
+  padding-top: 100px
+  padding-bottom: 50px
 
-h1 {
-  font-family: 'Satisfy', cursive; }
+  .title
+    color: #00496F
+    text-align: left
+    padding: 10px
+    font-size: 55px
+    -webkit-text-stroke: 3px #00496F
+    font-weight: 500
+    font-family: 'Cinzel', serif
 
-p {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 17px;
-  color: #252525;
-  letter-spacing: 1px;
-  line-height: 27px; }
+h1
+  font-family: 'Satisfy', cursive
 
-.x {
-  display: none; }
+p
+  font-family: 'PT Sans Narrow', sans-serif
+  font-size: 17px
+  color: #252525
+  letter-spacing: 1px
+  line-height: 27px
 
-.navbar-brand {
-  font-size: 30px; }
+.x
+  display: none
 
-/*opaque nav*/
-.opaque-navbar {
-  background-color: transparent;
-  transition: background-color .10s ease 10s; }
+.navbar-brand
+  font-size: 30px
 
-.opaque-navbar.opaque {
-  background: black;
-  height: 80px;
-  transition: background-color .5s ease 0s;
-  margin: 0px;
-  padding: 0px;
-  transition: all 0.5s ease;
-  box-shadow: 1px 8px 12px #0a1223; }
+/*opaque nav
+.opaque-navbar
+  background-color: transparent
+  transition: background-color .10s ease 10s
 
-@media (max-width: 768px) {
-  .navbar-default .navbar-nav > li:hover {
-    background-color: #252525; }
+.opaque-navbar.opaque
+  background: black
+  height: 80px
+  transition: background-color .5s ease 0s
+  margin: 0px
+  padding: 0px
+  transition: all 0.5s ease
+  box-shadow: 1px 8px 12px #0a1223
 
-  .opaque-navbar {
-    background: black;
-    height: 60px;
-    transition: background-color .5s ease 0s; }
+@media (max-width: 768px)
+  .navbar-default .navbar-nav > li:hover
+    background-color: #252525
 
-  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    background: black;
-    opacity: 0.8; } }
-.loaded article {
-  opacity: 1; }
+  .opaque-navbar
+    background: black
+    height: 60px
+    transition: background-color .5s ease 0s
 
-article {
-  opacity: 0;
-  /*El valor inicial de la opacidad del contenedor es 0, por medio de javascript haremos que aparezca al asignarle la clase .loaded_section*/
-  -webkit-transition: opacity 2s;
-  -moz-transition: opacity 2s;
-  -o-transition: opacity 2s;
-  transition: opacity 2s; }
-  article h2 {
-    font-family: 'Satisfy', cursive;
-    opacity: 1;
-    position: relative;
-    z-index: 50;
-    color: white;
-    font-size: 120px; }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form
+    background: black
+    opacity: 0.8
 
-.loading {
-  background: url("../box.gif") no-repeat center 280px;
-  background-size: 100px; }
+.loaded article
+  opacity: 1
 
-.pd-20 {
-  padding-top: 200px; }
+article
+  opacity: 0
 
-.hero {
-  position: relative;
-  width: 100%;
-  height: 667px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../codigo.gif") no-repeat 0% 0% fixed;
-  background-size: cover; }
-  .hero h4 {
-    font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 40px;
-    color: white;
-    font-weight: bold; }
-  .hero.fadeout .optional-rainbow {
-    display: block; }
-  .hero.fadeout:before {
-    display: none; }
-  .hero:before {
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 5;
-    content: "";
-    opacity: 0.1; }
+  /*El valor inicial de la opacidad del contenedor es 0, por medio de javascript haremos que aparezca al asignarle la clase .loaded_section
+  -webkit-transition: opacity 2s
+  -moz-transition: opacity 2s
+  -o-transition: opacity 2s
+  transition: opacity 2s
 
-/*nav*/
-#sobre_mi {
-  padding-bottom: 160px; }
-  #sobre_mi .biografia {
-    padding: 50px; }
+  h2
+    font-family: 'Satisfy', cursive
+    opacity: 1
+    position: relative
+    z-index: 50
+    color: white
+    font-size: 120px
 
-#sobre_mi img {
-  box-shadow: 14px 15px 23px black;
-  width: 50%; }
+.loading
+  background: url("../box.gif") no-repeat center 280px
+  background-size: 100px
 
-#bkg-medio {
-  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../captura-atom.png");
-  background-repeat: repeat;
-  height: 200px;
-  background-attachment: fixed; }
+.pd-20
+  padding-top: 200px
 
-#portfolio img {
-  width: 100%;
-  box-shadow: 4px 5px 8px  #252525; }
+.hero
+  position: relative
+  width: 100%
+  height: 667px
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../codigo.gif") no-repeat 0% 0% fixed
+  background-size: cover
 
-/*MIXIN NAV*/
-.navbar-default {
-  border: none;
-  font-size: 14px;
-  padding: 4px;
-  transition: all 1s ease;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: transparent;
-  color: white; }
+  h4
+    font-family: 'PT Sans Narrow', sans-serif
+    font-size: 40px
+    color: white
+    font-weight: bold
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a {
-  font-family: 'Satisfy', cursive;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: transparent;
-  color: white; }
+  &.fadeout
+    .optional-rainbow
+      display: block
 
-.navbar-default .navbar-nav > li > a {
-  font-weight: normal;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: transparent;
-  color: white; }
+    &:before
+      display: none
 
-.navbar-default .navbar-nav > li > a:hover {
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: transparent;
-  color: #00496F; }
+  &:before
+    display: block
+    position: absolute
+    height: 100%
+    width: 100%
+    z-index: 5
+    content: ""
+    opacity: 0.1
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  border-radius: 3px;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: #00496F;
-  color: white; }
+/*nav
+#sobre_mi
+  padding-bottom: 160px
 
-.navbar-default .navbar-toggle:hover {
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: #00496F;
-  color: transparent; }
+  .biografia
+    padding: 50px
 
-#skills img {
-  width: 100%;
-  height: 250px; }
-#skills .cajaskill {
-  padding: 80px; }
-#skills h3 {
-  color: #00496F;
-  font-family: 'Satisfy', cursive;
-  font-size: 30px; }
-#skills .responsive {
-  padding-top: 24px; }
+#sobre_mi img
+  box-shadow: 14px 15px 23px black
+  width: 50%
 
-.titlee {
-  font-weight: bold;
-  font-size: 20px;
-  font-family: sans-serif;
-  color: #db3a34; }
+#bkg-medio
+  background-image: linear-gradient(rgba(0, 0, 0, -0.4), rgba(0, 0, 0, 0.5)), url("../captura-atom.png")
+  background-repeat: repeat
+  height: 200px
+  background-attachment: fixed
 
-.lnr {
-  font-size: 30px; }
+#portfolio
+  img
+    width: 100%
+    box-shadow: 4px 5px 8px  #252525
 
-.navbar-nav > li {
-  float: left;
-  margin-left: 124px; }
+/*MIXIN NAV
+=navbar_mixin($background-color, $color)
+  font-weight: bold
+  font-family: 'Francois One', sans-serif
+  background-color: $background-color
+  color: $color
 
-#contactame {
-  padding-top: 10px; }
-  #contactame i {
-    color: #252525;
-    font-size: 140px; }
-  #contactame i:hover {
-    color: #00496F; }
-  #contactame .iconmin {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 70px; }
-  #contactame p {
-    padding: 0px 150px; }
+.navbar-default
+  border: none
+  font-size: 14px
+  padding: 4px
+  transition: all 1s ease
 
-@media (min-width: 768px) {
-  .navbar-right {
-    float: none !important;
-    margin-right: 0px !important;
-    padding: 7px; } }
-.ih-item.square.effect13.colored .info {
-  background: #00496F; }
+  +navbar_mixin(transparent, white)
 
-footer {
-  background-color: #252525;
-  padding: 20px; }
-  footer p {
-    color: white;
-    font-size: 15px; }
+.navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a
+  font-family: 'Satisfy', cursive
 
-.ih-item.square {
-  position: relative;
-  width: 100%;
-  height: 170px;
-  border: none;
-  box-shadow: none;
-  padding: 0px; }
+  +navbar_mixin(transparent, white)
 
-#frase {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../line.gif") no-repeat 0% 0% fixed;
-  background-size: cover;
-  color: white; }
+.navbar-default .navbar-nav > li > a
+  font-weight: normal
+  letter-spacing: 2px
 
-.navbar {
-  border: none;
-  margin-bottom: 8px; }
+  +navbar_mixin(transparent, white)
 
-.navbar-brand img {
-  width: 100%; }
+.navbar-default .navbar-nav > li > a:hover
+  +navbar_mixin(transparent, #00496F)
 
-span {
-  font-size: 20px;
-  font-family: 'Cinzel', serif; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover
+  border-radius: 3px
 
-.logos {
-  padding: 60px; }
+  +navbar_mixin(#00496F, white)
 
-@media screen and (max-width: 1200px) {
-  .logos {
-    padding: 20px; }
+.navbar-default .navbar-toggle:hover
+  +navbar_mixin(#00496F, transparent)
 
-  #contactame p {
-    padding: 0px; }
+#skills
+  img
+    width: 100%
+    height: 250px
 
-  article h2 {
-    font-size: 117px; }
+  .cajaskill
+    padding: 80px
 
-  section .title {
-    font-size: 35px; }
+  h3
+    color: #00496F
+    font-family: 'Satisfy', cursive
+    font-size: 30px
 
-  .navbar-nav > li {
-    margin-left: 50px; }
+  .responsive
+    padding-top: 24px
 
-  .pd-20 {
-    padding-top: 185px; } }
-@media screen and (max-width: 780px) {
-  article h2 {
-    font-size: 60px; }
+.titlee
+  font-weight: bold
+  font-size: 20px
+  font-family: sans-serif
+  color: #db3a34
 
-  .pd-20 {
-    padding-top: 100px; }
+.lnr
+  font-size: 30px
 
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 667px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../bgmovil.jpg") no-repeat 0% 0% fixed;
-    background-size: cover; }
-    .hero h4 {
-      font-size: 30px; } }
-.ih-item.square.effect13 {
-  overflow: hidden;
-  padding: 20px; }
+.navbar-nav > li
+  float: left
+  margin-left: 124px
 
-/*# sourceMappingURL=main.css.map */
+#contactame
+  padding-top: 10px
+
+  i
+    color: #252525
+    font-size: 140px
+
+  i:hover
+    color: #00496F
+
+  .iconmin
+    padding-top: 20px
+    text-align: center
+    font-size: 70px
+
+  p
+    padding: 0px 150px
+
+@media (min-width: 768px)
+  .navbar-right
+    float: none !important
+    margin-right: 0px !important
+    padding: 7px
+
+.ih-item.square.effect13.colored .info
+  background: #00496F
+
+footer
+  background-color: #252525
+  padding: 20px
+
+  p
+    color: white
+    font-size: 15px
+
+.ih-item.square
+  position: relative
+  width: 100%
+  height: 170px
+  border: none
+  box-shadow: none
+  padding: 0px
+
+#frase
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../line.gif") no-repeat 0% 0% fixed
+  background-size: cover
+  color: white
+
+.navbar
+  border: none
+  margin-bottom: 8px
+
+.navbar-brand img
+  width: 100%
+
+span
+  font-size: 20px
+  font-family: 'Cinzel', serif
+
+.logos
+  padding: 60px
+
+@media screen and (max-width: 1200px)
+  .logos
+    padding: 20px
+
+  #contactame p
+    padding: 0px
+
+  article
+    h2
+      font-size: 117px
+
+  section .title
+    font-size: 35px
+
+  .navbar-nav > li
+    margin-left: 50px
+
+  .pd-20
+    padding-top: 185px
+
+@media screen and (max-width: 780px)
+  article
+    h2
+      font-size: 60px
+
+  .pd-20
+    padding-top: 100px
+
+  .hero
+    position: relative
+    width: 100%
+    height: 667px
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../bgmovil.jpg") no-repeat 0% 0% fixed
+    background-size: cover
+
+    h4
+      font-size: 30px
+
+.ih-item.square.effect13
+  overflow: hidden
+  padding: 20px
