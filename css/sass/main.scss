@@ -209,6 +209,7 @@ font-size: 30px;}
         margin-left: 124px;
     }
 #contactame{
+
   padding-top: 10px;
   i{
     color:#252525;
@@ -281,6 +282,9 @@ span{font-size: 20px;font-family: 'Cinzel', serif;}
   }
 }
 @media screen and (max-width: 780px){
+  .correo{
+    font-size: 11px;
+  }
     article{
       h2{
       font-size: 60px;

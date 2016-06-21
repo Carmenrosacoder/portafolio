@@ -267,6 +267,9 @@ span {
   .pd-20 {
     padding-top: 185px; } }
 @media screen and (max-width: 780px) {
+  .correo {
+    font-size: 11px; }
+
   article h2 {
     font-size: 60px; }
 
