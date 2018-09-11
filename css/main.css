@@ -1,31 +1,37 @@
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{padding: 0;}
 section {
   text-align: center;
-  padding-top: 100px;
-  padding-bottom: 50px; }
+height: 100%; }
   section .title {
     color: #00496F;
-    text-align: left;
-    padding: 10px;
-    font-size: 55px;
-    -webkit-text-stroke: 3px #00496F;
-    font-weight: 500;
-    font-family: 'Cinzel', serif; }
+    margin: 0px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive; }
 
 h1 {
-  font-family: 'Satisfy', cursive; }
+  font-family: 'Nunito Sans', sans-serif; }
 
 p {
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
+  text-align: left;
   color: #252525;
   letter-spacing: 1px;
   line-height: 27px; }
 
 .x {
   display: none; }
-
+.headernav{
+  padding: 12px 0px;
+}
 .navbar-brand {
-  font-size: 30px; }
+  font-family: 'Amatic SC', cursive;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 38px;
+}
 
 /*opaque nav*/
 .opaque-navbar {
@@ -33,14 +39,19 @@ p {
   transition: background-color .10s ease 10s; }
 
 .opaque-navbar.opaque {
-  background: black;
+  background: transparent;
   height: 80px;
   transition: background-color .5s ease 0s;
   margin: 0px;
   padding: 0px;
   transition: all 0.5s ease;
-  box-shadow: 1px 8px 12px #0a1223; }
-
+ }
+ .opaque.navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a{
+    color:#00496F;
+ }
+ .opaque-navbar.opaque.navbar-default .navbar-nav > li > a {
+   color:#00496F;
+ }
 @media (max-width: 768px) {
   .navbar-default .navbar-nav > li:hover {
     background-color: #252525; }
@@ -52,7 +63,10 @@ p {
 
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     background: black;
-    opacity: 0.8; } }
+    opacity: 0.8;
+    width: 100%;
+    margin:0;
+  } }
 .loaded article {
   opacity: 1; }
 
@@ -64,25 +78,25 @@ article {
   -o-transition: opacity 2s;
   transition: opacity 2s; }
   article h2 {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Amatic SC', cursive;
     opacity: 1;
     position: relative;
     z-index: 50;
     color: white;
-    font-size: 120px; }
+    font-size: 80px; }
 
 .loading {
   background: url("../box.gif") no-repeat center 280px;
   background-size: 100px; }
 
 .pd-20 {
-  padding-top: 200px; }
+  padding-top: 19%; }
 
 .hero {
   position: relative;
   width: 100%;
   height: 667px;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url("../codigo.gif") no-repeat 0% 0% fixed;
+  background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)),url("../frontend-developer.jpg") fixed;
   background-size: cover; }
   .hero h4 {
     font-family: 'PT Sans Narrow', sans-serif;
@@ -103,14 +117,27 @@ article {
     opacity: 0.1; }
 
 /*nav*/
+.row{margin: 0;}
+.lateral{
+  background-color: white;
+}
+.heightsection{
+
+  padding:14rem 5%;
+}
+#skills .heightsection{
+  height: auto;
+}
 #sobre_mi {
-  padding-bottom: 160px; }
+  background-color: #f7a3b7; }
   #sobre_mi .biografia {
-    padding: 50px; }
+    padding: 50px 10px; }
 
 #sobre_mi img {
-  box-shadow: 14px 15px 23px black;
-  width: 50%; }
+  padding: 5rem 0;
+  /* box-shadow: 2px 6px 23px #959595; */
+  max-width: 200px;
+  border-radius: 100%; }
 
 #bkg-medio {
   background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("../captura-atom.png");
@@ -128,38 +155,39 @@ article {
   font-size: 14px;
   padding: 4px;
   transition: all 1s ease;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
   background-color: transparent;
   color: white; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav .active > a {
-  font-family: 'Satisfy', cursive;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Amatic SC', cursive;
   background-color: transparent;
-  color: white; }
+  color: white;
+}
 
 .navbar-default .navbar-nav > li > a {
-  font-weight: normal;
-  letter-spacing: 2px;
-  font-weight: bold;
-  font-family: 'Francois One', sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: transparent;
-  color: white; }
+  color:white; }
 
 .navbar-default .navbar-nav > li > a:hover {
   font-weight: bold;
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: transparent;
-  color: #00496F; }
+  color: #f7a3b7;
+ }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   border-radius: 3px;
   font-weight: bold;
-  font-family: 'Francois One', sans-serif;
-  background-color: #00496F;
-  color: white; }
+  color: #f7a3b7;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: transparent;
+  text-decoration: underline; }
+  .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+    color: #f7a3b7;
+  }
 
 .navbar-default .navbar-toggle:hover {
   font-weight: bold;
@@ -174,7 +202,9 @@ article {
   padding: 80px; }
 #skills h3 {
   color: #00496F;
-  font-family: 'Satisfy', cursive;
+  font-family:'Amatic SC';
+  font-weight: bold;
+
   font-size: 30px; }
 #skills .responsive {
   padding-top: 24px; }
@@ -190,36 +220,45 @@ article {
 
 .navbar-nav > li {
   float: left;
-  margin-left: 124px; }
+  margin-left: 8px; }
 
 #contactame {
-  padding-top: 10px; }
+  padding: 8rem 40px;
+text-align: left;
+background-color: #96969642; }
+.redesSociales{
+  text-align: center;
+  padding: 30px 0px;
+}
+.escribeme{text-align: center;}
   #contactame i {
     color: #252525;
-    font-size: 140px; }
+    font-size: 50px;
+    padding: 0px 10px; }
   #contactame i:hover {
     color: #00496F; }
   #contactame .iconmin {
-    padding-top: 20px;
-    text-align: center;
-    font-size: 70px; }
+    font-size: 24px;
+    float: left;
+    padding-right: 8px; }
   #contactame p {
-    padding: 0px 150px; }
+  font-family: 'Nunito Sans', sans-serif;
+font-size: 13px; }
 
 @media (min-width: 768px) {
   .navbar-right {
-    float: none !important;
     margin-right: 0px !important;
-    padding: 7px; } }
+   } }
 .ih-item.square.effect13.colored .info {
   background: #00496F; }
 
 footer {
-  background-color: #252525;
+  background-color: white;
   padding: 20px; }
   footer p {
-    color: white;
-    font-size: 15px; }
+    color: black;
+    font-size: 13px; 
+    font-family: 'Nunito Sans', sans-serif;}
 
 .ih-item.square {
   position: relative;
@@ -232,7 +271,12 @@ footer {
 #frase {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../line.gif") no-repeat 0% 0% fixed;
   background-size: cover;
-  color: white; }
+  color: white; 
+  height: 140px;}
+#frase h2{
+  margin: 0;
+  padding: 20px 0px;
+}
 
 .navbar {
   border: none;
@@ -255,23 +299,22 @@ span {
   #contactame p {
     padding: 0px; }
 
-  article h2 {
-    font-size: 117px; }
-
   section .title {
-    font-size: 35px; }
-
-  .navbar-nav > li {
-    margin-left: 50px; }
+    font-size: 35px;
+ }
 
   .pd-20 {
     padding-top: 185px; } }
 @media screen and (max-width: 780px) {
+  .navbar-nav > li{
+    width: 100%;
+    margin: 0;
+  }
   .correo {
     font-size: 11px; }
 
   article h2 {
-    font-size: 60px; }
+    font-size: 40px; }
 
   .pd-20 {
     padding-top: 100px; }
@@ -279,11 +322,15 @@ span {
   .hero {
     position: relative;
     width: 100%;
-    height: 667px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../bgmovil.jpg") no-repeat 0% 0% fixed;
-    background-size: cover; }
+    height: 367px;
+    background-size: auto;
+  background-repeat: no-repeat; }
     .hero h4 {
-      font-size: 30px; } }
+      font-size: 30px; } 
+    .heightsection {
+        padding: 3rem 5%;
+    }
+    }
 .ih-item.square.effect13 {
   overflow: hidden;
   padding: 20px; }

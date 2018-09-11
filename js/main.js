@@ -1,11 +1,5 @@
 new WOW().init();
-/*!
- * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -14,6 +8,16 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
+});
+$('a[href^="#"]').on('click', function(event) {
+  var target = $( $(this).attr('href') );
+
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').animate({
+          scrollTop: target.offset().top
+      }, 1000);
+  }
 });
 
 // Highlight the top nav as scrolling occurs
@@ -42,7 +46,7 @@ $(window).load(function() {
         $('body').removeClass("loading").addClass('loaded');
         $('.navbar-default').removeClass("x").addClass('navbar');
 
-    }, 2000);
+    }, 1000);
 });
 
 /**/
