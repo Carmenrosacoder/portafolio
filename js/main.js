@@ -37,7 +37,7 @@ $(window).load(function() {
         $('body').removeClass("loading").addClass('loaded');
         $('.navbar-default').removeClass("x").addClass('navbar');
 
-    }, 1000);
+    }, 550);
 });
 
 /**/
@@ -67,16 +67,13 @@ class ParallaxHero{
       $('.selectable').toggleClass('on');
       $('.hero').toggleClass('fadeout');
     });
-    $('')
   }
   sampleScroll(){
     //move it so that it shows in portfolio
-    setTimeout(function(){$(this).scrollTop(500, 1000)}, 500);
+    setTimeout(function(){$(this).scrollTop(0, 700), 200});
   }
 
 }
-
-
 
 $(".bar").each(function(){
   $(this).find(".bar-inner").animate({
