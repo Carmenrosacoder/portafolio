@@ -71,6 +71,9 @@ p {
   } }
 .loaded article {
   opacity: 1; }
+.loaded svg{
+  display: none;
+}
 
 article {
   opacity: 0;
@@ -86,10 +89,6 @@ article {
     z-index: 50;
     color: white;
     font-size: 80px; }
-
-.loading {
-  background: url("../box.gif") no-repeat center 280px;
-  background-size: 100px; }
 
 .pd-20 {
   padding-top: 19%; }
@@ -197,7 +196,7 @@ article {
   color: transparent; }
 
 #skills img {
-  width:auto; }
+  width: 69%; }
 #skills .cajaskill {
   padding: 80px; }
 #skills h3 {
@@ -223,16 +222,20 @@ article {
   margin-left: 8px; }
 
 #contactame {
-  padding: 8rem 40px;
-text-align: left;
-background-color: #96969642; }
+  padding: 12rem 40px;
+  text-align: left;
+  /*background-color: #96969642;*/
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),url(../paisaje.jpg) fixed;
+  background-size: cover;
+ }
 .redesSociales{
   text-align: center;
   padding: 30px 0px;
 }
 .escribeme{text-align: center;}
+  #contactame .title{color: white;}
   #contactame i {
-    color: #252525;
+    color: white;
     font-size: 50px;
     padding: 0px 10px; }
   #contactame i:hover {
@@ -243,7 +246,8 @@ background-color: #96969642; }
     padding-right: 8px; }
   #contactame p {
   font-family: 'Nunito Sans', sans-serif;
-font-size: 13px; }
+  font-size: 13px;
+  color: white; }
 
 
 .ih-item.square.effect13.colored .info {
@@ -341,3 +345,47 @@ span {
   padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */
+
+/*loader*/
+
+
+svg.loading {
+  -webkit-transform-origin: 50% 65%;
+          transform-origin: 50% 65%;
+          position: absolute;
+          top: 62%;
+          left: 50%;
+          height: 21%;
+          width: 50%;
+          margin: -15% 0 0 -25%;
+}
+
+svg.loading polygon {
+  stroke-dasharray: 17;
+  -webkit-animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+          animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 136;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 136;
+  }
+}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

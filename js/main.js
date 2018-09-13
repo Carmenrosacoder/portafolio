@@ -1,14 +1,5 @@
 new WOW().init();
 
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
 $('a[href^="#"]').on('click', function(event) {
   var target = $( $(this).attr('href') );
 
@@ -16,7 +7,7 @@ $('a[href^="#"]').on('click', function(event) {
       event.preventDefault();
       $('html, body').animate({
           scrollTop: target.offset().top
-      }, 2000);
+      });
   }
 });
 
@@ -80,10 +71,13 @@ class ParallaxHero{
   }
   sampleScroll(){
     //move it so that it shows in portfolio
-    setTimeout(function(){$.scrollTo(500, 2000)}, 500);
+    setTimeout(function(){$(this).scrollTop(500, 1000)}, 500);
   }
 
 }
+
+
+
 $(".bar").each(function(){
   $(this).find(".bar-inner").animate({
     width: $(this).attr("data-width")
