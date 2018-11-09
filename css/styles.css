@@ -1,0 +1,190 @@
+body {
+  color: black;
+  background: #eaf2e3;
+  font-family: "Open Sans", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/*navbar*/
+.redesSociales {
+  z-index: 1031;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #eaf2e3;
+}
+.redesSociales a {
+  color: #66d7d1;
+}
+
+.fixed-top {
+  top: 23px;
+}
+
+.navbar-dark {
+  background-color: #ff637d;
+}
+.navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .dropdown-menu {
+  font-size: 0.7rem;
+  color: white;
+}
+.navbar-dark .navbar-brand {
+  font-size: 1.4rem;
+}
+.navbar-dark .btn {
+  font-size: 0.7rem;
+}
+
+/*home slider*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/banner.png) repeat fixed;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  color: #ff637d;
+  height: 100vh;
+}
+.hero .text-hero {
+  height: 100vh;
+}
+.hero .text-hero h1 {
+  color: white;
+  font-size: 3.3rem;
+}
+.hero .text-hero a {
+  font-size: 0.7rem;
+  color: #ff637d;
+}
+.hero .text-hero a i {
+  font-size: 1.9rem;
+  top: 0.3rem;
+  position: relative;
+}
+
+/*slick*/
+#portfolio .img {
+  margin: 0rem 1rem;
+  position: relative;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 25px;
+  opacity: 1;
+  color: #ff637d;
+}
+
+.slick-prev {
+  left: 5px;
+}
+
+.slick-next {
+  right: 5px;
+}
+
+/*skills*/
+#skills img {
+  max-width: 250px;
+}
+
+/*secciones*/
+.new_section {
+  height: 100vh;
+}
+
+/*section aply*/
+.info {
+  background-color: #66d7d1;
+  color: white;
+  position: absolute;
+  top: 0;
+  padding: 1.5rem;
+  bottom: 0;
+  opacity: 0;
+  left: 0;
+  right: 0;
+  transition: transform 2s;
+}
+.info:hover {
+  transform: scale(1.07);
+}
+.info p {
+  font-size: 0.9rem;
+}
+
+.img:hover .info {
+  opacity: 1;
+}
+
+/*acoordion*/
+#accordion h5 .btn {
+  color: black;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+#accordion h5 .btn.collapsed {
+  font-weight: 100;
+}
+#accordion h5 .btn.collapsed .arrowCollapse {
+  -webkit-transform: rotate(180deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -o-transform: rotate(180deg);
+  /* Opera */
+  transform: rotate(180deg);
+}
+#accordion h5 .btn.collapsed .active {
+  -webkit-transform: rotate(180deg);
+  /* Safari and Chrome */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -o-transform: rotate(180deg);
+  /* Opera */
+  transform: rotate(180deg);
+}
+
+#sobre_mi img {
+  box-shadow: 18px 16px 19px -11px #00000045;
+  border-radius: 100%;
+}
+
+/*footer*/
+footer ul, footer p {
+  font-size: 0.8rem;
+}
+footer ul li, footer p li {
+  list-style: none;
+  padding: 0.3rem 0;
+}
+footer .footer-section {
+  font-size: 0.7rem;
+}
+footer .footer-section i, footer .footer-section a {
+  color: black;
+}
+footer .footer-section i:hover, footer .footer-section a:hover {
+  color: black;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 17px;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

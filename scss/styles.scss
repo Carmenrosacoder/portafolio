@@ -1,0 +1,156 @@
+@import 'helpers/_variable';
+@import 'helpers/_mixins';
+@import 'base/_base';
+@import 'layouts/_responsive';
+
+/*navbar*/
+.redesSociales{
+    z-index: 1031;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: $tercero;
+    a{
+        color: $secundario;
+    }
+}
+.fixed-top{
+    top:23px;
+}
+.navbar-dark{
+    background-color: $principal;
+    .navbar-nav{
+        .nav-link, .dropdown-menu{
+            font-size: 0.7rem;
+            color: $texto2;
+        }
+    }
+    .navbar-brand{font-size: 1.4rem;}
+    .btn{
+        font-size: 0.7rem;
+    }
+    
+} 
+/*home slider*/
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/banner.png) repeat fixed;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    color:$principal;
+    height: 100vh;
+    .text-hero{
+        height: 100vh;
+        h1{
+            color: $texto2;
+            font-size: 3.3rem;
+        }
+        a{
+            font-size: 0.7rem;
+            color: $principal;
+            i{
+                font-size: 1.9rem;
+                top: 0.3rem;
+                position: relative;
+            }
+        }
+    }
+}
+
+/*slick*/
+#portfolio .img{
+    margin: 0rem 1rem;
+    position: relative;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 25px;
+    opacity: 1;
+    color: #ff637d;
+}
+.slick-prev{
+    left: 5px;
+    
+}
+.slick-next{
+    right: 5px;
+}
+/*skills*/
+#skills img{
+    max-width: 250px;
+}
+/*secciones*/
+.new_section{
+    height: 100vh;
+}
+
+/*section aply*/
+.info{
+    background-color: $secundario;
+    color: $texto2;
+    position: absolute;
+    top: 0;
+    padding: 1.5rem;
+    bottom: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    transition: transform 2s;
+    &:hover{
+        transform: scale(1.07);
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
+.img:hover .info{
+    opacity: 1;
+}
+
+/*acoordion*/
+#accordion h5 .btn{
+    color: $texto;
+    font-weight: bold;
+    font-size: 0.85rem;
+    &.collapsed{
+        font-weight: 100;
+        .arrowCollapse{
+            @include rotate(180deg);
+        }
+        .active{
+            @include rotate(180deg);
+        }
+    }
+}
+
+#sobre_mi img{
+    box-shadow: 18px 16px 19px -11px #00000045;
+    border-radius: 100%;
+}
+
+
+/*footer*/
+footer{
+    ul, p{
+        font-size: 0.8rem;
+        li{
+            list-style: none;
+            padding: .3rem 0;
+        }        
+    }
+    .footer-section{
+        font-size: 0.7rem;
+        i,a{color:$texto;
+        &:hover{
+            color: black;
+        }
+        }
+    }
+
+}
+@media #{$width-small}{
+    html{
+        font-size: 17px;
+    }
+    .bg-dark{background-color:transparent !important; }
+
+}

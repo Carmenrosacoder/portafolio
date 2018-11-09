@@ -1,82 +1,32 @@
-new WOW().init();
-
-$('a[href^="#"]').on('click', function(event) {
-  var target = $( $(this).attr('href') );
-
-  if( target.length ) {
-      event.preventDefault();
-      $('html, body').animate({
-          scrollTop: target.offset().top
-      });
-  }
-});
-
-// Highlight the top nav as scrolling occurs
-$('body').scrollspy({
-    target: '.navbar-fixed-top'
+//new WOW().init();
+window.addEventListener('load', ()=>{
+  escribir("write",texto,250);
 })
 
-// Closes the Responsive Menu on Menu Item Click
-$('.navbar-collapse ul li a').click(function() {
-    $('.navbar-toggle:visible').click();
+
+var texto =  "FRONTEND DEVELOPER";
+$('.responsive').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
 });
 
-$(window).scroll(function() {
-    if($(this).scrollTop() > 150)  /*height in pixels when the navbar becomes non opaque*/
-    {
-        $('.opaque-navbar').addClass('opaque');
-    } else {
-        $('.opaque-navbar').removeClass('opaque');
-    }
-});
+function escribir(contenedor,writer,speed){
+
+  longitud = writer.length;
+
+  cnt = document.getElementById(contenedor);
+  var i=0;
+  tiempo = setInterval(function(){
+     cnt.innerHTML = cnt.innerHTML.substr(0,cnt.innerHTML.length-1) + writer.charAt(i)+ " ";
+     if(i >= longitud){
+        clearInterval(tiempo);
+        cnt.innerHTML = cnt.innerHTML.substr(0,longitud);
+        return true;
+     } else {
+        i++;
+     }},speed);
+};
 
 
-$(window).load(function() {
-    // start up after 2sec no matter what
-    window.setTimeout(function(){
-        $('body').removeClass("loading").addClass('loaded');
-        $('.navbar-default').removeClass("x").addClass('navbar');
 
-    }, 550);
-});
-
-/**/
-window.onload=()=>{
-  const ph = new ParallaxHero('.hero')
-
-}
-class ParallaxHero{
-  constructor(q){
-    this.element = q;
-    this.bindScroll();
-    this.sampleScroll();
-  }
-  bindScroll(){
-    $(window).on('scroll', ()=>{
-      const scrolled = $(window).scrollTop();
-      //Move & fade the H2 on scroll.
-      $(`${this.element} h2`).css({
-        'top':`${scrolled * 0.7}px`,
-        'opacity':`${1-(scrolled/$(this.element).outerHeight())*1.8}`
-      });
-      //Fade the extra rainbow div just in case it's visible
-      $(`${this.element} .optional-rainbow`).css('opacity', `${0.4 + (scrolled/$(this.element).outerHeight())}`);
-    });
-    //added control to toggle the extra rainbow div, just for s&g
-    $('.selectable').on('click', (e)=>{
-      $('.selectable').toggleClass('on');
-      $('.hero').toggleClass('fadeout');
-    });
-  }
-  sampleScroll(){
-    //move it so that it shows in portfolio
-    setTimeout(function(){$(this).scrollTop(0, 700), 200});
-  }
-
-}
-
-$(".bar").each(function(){
-  $(this).find(".bar-inner").animate({
-    width: $(this).attr("data-width")
-  },2000)
-});

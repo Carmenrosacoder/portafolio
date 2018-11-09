@@ -2,13 +2,13 @@
 section {
   text-align: center;
 height: 100%; }
-  section .title {
+  section .tittle {
     color: #00496F;
     margin: 0px;
     font-size: 40px;
     text-align: center;
     font-weight: bold;
-    font-family: 'Amatic SC', cursive; }
+    font-family: 'Tangerine', cursive;}
 
 h1 {
   font-family: 'Nunito Sans', sans-serif; }
@@ -130,9 +130,13 @@ article {
   height: auto;
 }
 #sobre_mi {
-  background-color: #f7a3b7; }
+  background-color: #f7a3b7; 
+  min-height: 657px;}
   #sobre_mi .biografia {
     padding: 50px 10px; }
+  .tittle{
+    height: 100vh;
+  }
 
 #sobre_mi img {
   padding: 5rem 0;
@@ -208,7 +212,7 @@ article {
 #skills .responsive {
   padding-top: 24px; }
 
-.titlee {
+.tittle {
   font-weight: bold;
   font-size: 20px;
   font-family: sans-serif;
@@ -301,7 +305,7 @@ span {
   #contactame p {
     padding: 0px; }
 
-  section .title {
+  section .tittle {
     font-size: 35px;
  }
 

@@ -1,0 +1,27 @@
+
+@mixin placeholder(){
+	::-webkit-input-placeholder {
+	   color: $color_form;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   color: $color_form;  
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: $color_form;  
+	}
+	:-ms-input-placeholder {  
+	   color: $color_form;  
+	}
+}
+@mixin rotate($degree) {
+    -webkit-transform: rotate($degree); /* Safari and Chrome */
+    -moz-transform: rotate($degree);   /* Firefox */
+    -ms-transform: rotate($degree);   /* IE 9 */
+    -o-transform: rotate($degree);   /* Opera */
+	transform: rotate($degree);
+
+}
+
+
+
+  

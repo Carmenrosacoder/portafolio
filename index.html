@@ -7,212 +7,270 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bree+Serif|Nunito+Sans" rel="stylesheet">
-    <link href="css/ihover.min.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <script src="js/wow.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    
   </head>
-  <svg id="triangle" class="loading" width="100px" height="100px" viewBox="-3 -4 39 39">
+  <!--<svg id="triangle" class="loading" width="100px" height="100px" viewBox="-3 -4 39 39">
       <polygon fill="#EFEFEF" stroke="#f7a3b7" stroke-width="1" points="16,0 32,32 0,32"></polygon>
-    </svg>
+    </svg>-->
   <body class="loading">
-    <header>
-      <!-- Fixed navbar-->
-      <div role="navegacion" class="navbar navbar-default navbar-fixed-top opaque-navbar x">
-        <div class="container headernav">
-          <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#inicio">Portafolio</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right navL">
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#sobre_mi">Acerca de mí</a></li>
-              <li><a href="#skills"> Habilidades</span></a></li>
-              <li><a href="#portfolio">Trabajos</a></li>
-              <li><a href="#contactame">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-    <article id="inicio" class="hero vertical-center">
-      <div class="container text-center pd-20">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><a href=""></a>
-            
-            <h2>Front End Developer</h2>
-          
-          </div>
-        </div>
-      </div>
-    </article>
-    <section id="sobre_mi">
-      
-        <div class="row"> 
-            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="lateral heightsection"><img src="perfil.jpg" data-wow-duration="600ms" data-wow-delay="600ms" class=" wow fadeInLeft"></div>
-            </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <div class="heightsection">
-                    <h1 class="title">Sobre mí</h1>
-                    <div data-wow-duration="600ms" data-wow-delay="600ms" class="biografia wow fadeInRight">
-                      <p>Hola! mi nombre es Carmenrosa, tengo 23 años y soy desarrolladora Front End. Además de Ingeniera de Sistemas en la Universidad Nacional del Callao. Soy una joven innovadora, autodidácta, con conocimientos en Marketing Digital y Metodologías Ágiles. Me apasiona el mundo tecnológico, los números y la música. Mi experiencia de trabajo en equipo ha permitido mi desarrollo personal y profesional, contáctame a través de mis redes sociales.  </p>
-                    </div>                    
-                  </div>
-
+    
+      <section class="hero" id="inicio">
+            <div class="w-100 redesSociales">
+                <div class="text-right">
+                  <a href="https://www.linkedin.com/in/carmenrosa-arias-laboratoria?trk=nav_responsive_tab_profile_pic" class="px-2"> <i class="fa fa-linkedin-square"></i></a>
+                  <a href="https://github.com/Carmenrosacoder" class="px-2"><i class="fa fa-github"></i></a>
                 </div>
+              </div>  
+        <nav class="navbar navbar-dark navbar-expand-lg navbar fixed-top">
 
+          <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="d-flex navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#inicio" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
+                                Inicio
+                            </a>            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#sobre_mi" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
+                                Acerca de mi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#skills" role="button"
+                                 aria-haspopup="true" aria-expanded="false">
+                                Habilidades
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-1" href="#portfolio" role="button"
+                               aria-haspopup="true" aria-expanded="false">
+                                Trabajos
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+                  
+            <div class="row align-items-center text-hero text-md-left">
+                <div class="col-md-8">
+                    <p class="text-white">
+                        Hola mi nombre es Carmen Arias y soy:              
+                    </p>
+                    <h1 id="write"></h1>
+                    
+                    
+                </div>
+            </div>
         </div>
-    </section>
-    <section id="frase" class="text-center">
-      <h2>"Si buscas resultados distintos, no hagas siempre lo mismo"</h2>
-    </section>
-    <section id="skills">
+      </section>
+
+    
+      <section id="sobre_mi" class="py-md-5 py-3">
+          <div class="container">
+                <div class="row">
+                      <div class="col-12 text-center">
+                              <h3 class="py-5">Carmenrosa Arias</h3>
+                      </div>
+              </div>   
+              <div class="row">
+                  <div class="col-12 col-md-5 text-center">
+                      <img src="img/perfil.JPG" class="img-fluid p-2" alt="" width="310px;">
+                  </div>
+                  <div class="col-12 col-md-7">
+                          <div id="accordion" class="my-3">
+                                    <div id="headingOne">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          <i class="fas fa-angle-down px-1 active arrowCollapse"></i>Developer
+                                        </button>
+                                      </h5>
+                                    </div>
+                                
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                      <div class="card-body">
+                                          Egresada de Laboratoria y Bachiller de la carrera de Ingeniería de sistemas. Apasionada por el aprendizaje de nuevas tecnologías.<br> Experiencia en Front End (mucho amor por el código y el café), conocimiento en Marketing Digital   <br> e interés en Back End.
+                                      </div>
+                                    </div>
+                                    <div id="headingTwo">
+                                      <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              <i class="fas fa-angle-down px-1 arrowCollapse"></i>Más
+                                        </button>
+                                      </h5>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                      <div class="card-body">
+                                        <a href="">CV</a>
+                                      </div>
+                                    </div>
+                                    
+                                    
+                                  </div>
+                          </div>
+                      
+                  </div>
+              </div>          
+          
+       
+      </section>
+
+    <section id="skills" class="py-md-5 py-3">
       <div class="heightsection">
         <div class="container">
+          <h3 class="title text-center py-5">Herramientas Front End</h3>
           <div class="row">
-            <h3>Herramientas Front End</h3>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logos"><img src="logos/html5.png">
+            
+            <div class="col-md-4 col-sm-4 col-xs-12 logos text-center"><img class="w-100" src="logos/html5.png">
               <h4>HTML5</h4>
               <p>Estructura el contenido de tu sitio web</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logos"><img src="logos/css3.png">
+            <div class="col-md-4 col-sm-4 col-xs-12 logos text-center"><img  class="w-100" src="logos/css3.png">
               <h4>CSS3</h4>
               <p>Incorpora estilos y mejora la presentación de tu sitio</p>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logos"><img src="logos/js.png">
+            <div class="col-md-4 col-sm-4 col-xs-12 logos text-center"><img class="w-100" src="logos/js.png">
               <h4>Javascript</h4>
               <p>Da mayor dinamismo e interactividad a tu sitio </p>
             </div>
           </div>
-          <div class="row">
-            <h3>Responsive Web Design</h3>
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">		
-              <p class="responsive">Hacer que tus sitios web se adapten a todos los dispositivos. Los sitios web responsivos facilitan la lectura y navegacion, reduciendo los inconvenientes generados por los cambios en tamaño,paneo y desplazamiento</p>
+          <h3 class="title text-center py-4">Responsive Web Design</h3>
+          <div class="row"> 
+            <div class="col-md-8 col-sm-8 col-xs-12">		
+              <p class="responsive_design">Hacer que tus sitios web se adapten a todos los dispositivos. Los sitios web responsivos facilitan la lectura y navegacion, reduciendo los inconvenientes generados por los cambios en tamaño,paneo y desplazamiento</p>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12"><img src="responsive.png"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12 text-md-right text-center"><img class="w-100" src="responsive.png"></div>
           </div>
+          <br>
           <div class="row">
-            <h3>Preprocesadores</h3>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 logos"><img src="logos/sass.png">
+            
+            <div class="col-lg-4 offset-md-1 col-md-4 col-sm-6 col-xs-12 text-center"><img class="w-90" src="logos/sass.png">
               <p>Me permite tener un código más sencillo de mantener y editar.Además,me permite crear variados archivos de CSS bajo el formato de .scss y luego compilarlos todos en un solo css.</p>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 logos"><img src="logos/jade.png">
+            <div class="col-lg-4 offset-md-2 col-md-4 col-sm-6 col-xs-12 text-center"><img class="w-90" src="logos/jade.png">
               <p>Me permite trabajar de manera ordenada y sencilla,utilizando mixins,bucles,en archivos separados .jade y compilar todos en un solo index final.</p>
             </div>
           </div>
-          <div class="row">
-            <h3>Relaciones interpersonales</h3>
-            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12 logos">
-              <p>Habilidad para el trabajo en equipo. En Laboratoria desarrollamos, reforzamos y pusimos en práctica habilidades personales y profesionales. El trabajar juntas en proyectos, permitió el manejar situaciones complicadas, manejar el estrés y resolver conflictos de manera adecuada. </p>
-            </div>
-            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 logos"><img src="equipo.jpg"></div>
-          </div>
+          
         </div>
       </div>
     </section>
-    <section id="bkg-medio">								</section>
-    <section id="portfolio">
-      <div class="heightsection">
-        <div class="container">
-          <h1 class="title">Trabajos realizados</h1>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://carmenrosacoder.github.io/Agency_theme/">
-                  <div class="img"><img src="portafolio/agency.PNG"></div>
-                  <div class="info">
-                    <h3>Agency Theme</h3>
+
+    <section id="portfolio" class="py-md-5 py-3">
+        <h3 class="title text-center py-5">Portafolio</h3>
+        <div class="responsive container">
+            <div>
+                <div class="ih-item square colored effect13 left_to_right"><a target="_blank" href="http://carmenrosacoder.github.io/Agency_theme/">
+                  <div class="img"><img src="portafolio/agency.PNG" class="w-100"><div class="info">
+                    <h5>Agency Theme</h5>
                     <p>Proyecto con Jade y Sass aplicando todas las herramientas </p>
-                  </div></a></div>
+                  </div></a></div></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">				
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://www.copracsa.com">
-                  <div class="img"><img src="portafolio/backyard.png"></div>
-                  <div class="info">
-                    <h3>Copracsa</h3>
+            <div>
+                <div class="ih-item square colored effect13 left_to_right"><a target="_blank" href="http://www.copracsa.com">
+                  <div class="img"><img src="portafolio/backyard.png" class="w-100"><div class="info">
+                    <h5>Copracsa</h5>
                     <p>Proyecto realizado en centro de trabajo.</p>
-                  </div></a></div>
+                  </div></div>
+                  </a></div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">				
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://carmenrosacoder.github.io/flattheme/Problema/blog.html">
-                  <div class="img"><img src="portafolio/flat.png"></div>
-                  <div class="info">
-                    <h3>Flat theme</h3>
-                    <p>Trabajo grupal</p>
-                  </div></a></div>
+            <div>
+                <div class="ih-item square colored effect13 left_to_right">
+                    <a target="_blank" href="http://adeb.com.pe/BuscadorBarreras/">
+                      <div class="img">
+                        <img src="portafolio/portafolio.png" class="w-100">
+                        <div class="info">
+                          <h5>Buscador Barreras</h5>
+                          <p>Proyecto freelance en el cual trabajé el lado front. </p>
+                        </div>                  
+                      </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="ih-item square colored effect13 left_to_right">
+                    <a target="_blank" href="http://carmenrosacoder.github.io/Reloj-digital-grupal/workspace/">
+                      <div class="img">
+                        <img src="portafolio/reloj_digital.png" class="w-100">
+                        <div class="info">
+                          <h5>Reloj digital</h5>
+                          <p>Trabajo en JS puro</p>
+                        </div>                  
+                      </div>
+                    </a>
+                  </div>
+            </div>
+            <div>
+                <div class="ih-item square colored effect13 left_to_right">
+                    <a target="_blank" href="http://carmenrosacoder.github.io/love_blog/Problema/home.html">
+                    <div class="img">
+                      <img src="portafolio/loveBlog.PNG" class="w-100">
+                      <div class="info">
+                          <h5>LoveBlog</h5>
+                          <p>Estructurar un proyecto con Sass </p>
+                      </div>                
+                    </div>
+                  </a>
+                </div>
+            </div>
+            <div>
+                <div class="ih-item square colored effect13 left_to_right">
+                    <a target="_blank" href="http://carmenrosacoder.github.io/user-testing/problema/index.html">
+                      <div class="img">
+                        <img src="portafolio/usertesting.PNG" class="w-100">
+                        <div class="info">
+                            <h5>User Testing</h5>
+                            <p>Ejercicio aplicando media queries		</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://carmenrosacoder.github.io/love_blog/Problema/home.html">
-                  <div class="img"><img src="portafolio/loveBlog.PNG"></div>
-                  <div class="info">
-                    <h3>LoveBlog</h3>
-                    <p>Estructurar un proyecto con Sass </p>
-                  </div></a></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">			
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://adeb.com.pe/BuscadorBarreras/">
-                  <div class="img"><img src="portafolio/portafolio.png"></div>
-                  <div class="info">
-                    <h3>Buscador Barreras</h3>
-                    <p>Proyecto freelance en el cual trabajé el lado front. </p>
-                  </div></a></div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">				
-              <div class="ih-item square colored effect13 left_to_right"><a href="http://carmenrosacoder.github.io/user-testing/problema/index.html">
-                  <div class="img"><img src="portafolio/usertesting.PNG"></div>
-                  <div class="info">
-                    <h3>User Testing</h3>
-                    <p>Ejercicio aplicando media queries		</p>
-                  </div></a></div>
-            </div>
-          </div>
-          <hr>
-        </div>
-      </div>
+
     </section>
-    <section id="contactame">
+    <section id="contactame" class="py-md-3 py-2">
       <div class="container">
         <div class="row">
-          <h1 class="title">Contáctame</h1>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+          
+
+          <div class="text-center col-md-12">
               
-            <div class="redesSociales">
-              <a href="https://www.linkedin.com/in/carmenrosa-arias-laboratoria?trk=nav_responsive_tab_profile_pic"> <i class="fa fa-linkedin-square"></i></a>
-              <a href="https://github.com/Carmenrosacoder"><i class="fa fa-github"></i></a>
-            </div>  
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="redesSociales">
-              <i class="fa fa-phone iconmin"></i>
-              <p>963111419</p> <i class="fa fa-envelope-o iconmin"></i>
-            <p class="correo">carmenrosa.araceli.arias.arias@gmail.com</p>
-            </div>
+            
+            <p><i class="fa fa-phone iconmin"></i> 963111419</p> 
+            <p class="correo"><i class="fa fa-envelope-o iconmin"></i> carmenrosa.araceli.arias.arias@gmail.com</p>
+          
 
           </div>
 
           
         </div>
-        <div class="row">
-          
-              <p class="escribeme">¿Listo para empezar tu siguiente proyecto? ¿Te gusta lo que has visto? <br>¡Genial! Dame una llamada o envíame un correo y te responderé lo más rápido que pueda.</p>
-          
-        </div>
+        
       </div>
     </section>
     <footer>
         <p class="text-center">Copyright © <a href="https://github.com/Carmenrosacoder"> Carmenrosa Arias Arias</a> 2018</p>
     </footer>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
-  </body>
+    </body>
 </html>
