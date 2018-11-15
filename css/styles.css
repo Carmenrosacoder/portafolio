@@ -18,54 +18,61 @@ p {
   position: fixed;
   left: 0;
   right: 0;
-  background: #eaf2e3;
 }
 .redesSociales a {
   color: #66d7d1;
 }
 
-.fixed-top {
-  top: 23px;
-}
-
 .navbar-dark {
-  background-color: #ff637d;
+  transition: ease-in 0.4s;
 }
 .navbar-dark .navbar-nav .nav-link, .navbar-dark .navbar-nav .dropdown-menu {
   font-size: 0.7rem;
+  color: white;
+  padding: 0.3rem 1rem;
+}
+.navbar-dark .navbar-nav i {
   color: white;
 }
 .navbar-dark .navbar-brand {
   font-size: 1.4rem;
 }
 .navbar-dark .btn {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+}
+.navbar-dark.added-classname {
+  background-color: #ff637d;
 }
 
 /*home slider*/
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/banner.png) repeat fixed;
-  background-size: cover;
-  height: 500px;
   position: relative;
   color: #ff637d;
   height: 100vh;
 }
-.hero .text-hero {
-  height: 100vh;
-}
 .hero .text-hero h1 {
   color: white;
-  font-size: 3.3rem;
+  font-size: 3.5rem;
 }
 .hero .text-hero a {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #ff637d;
 }
 .hero .text-hero a i {
   font-size: 1.9rem;
   top: 0.3rem;
   position: relative;
+}
+.hero .contenido_banner {
+  z-index: 111;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  max-width: 450px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 13rem 0rem;
 }
 
 /*slick*/
@@ -175,6 +182,13 @@ footer .footer-section i, footer .footer-section a {
 }
 footer .footer-section i:hover, footer .footer-section a:hover {
   color: black;
+}
+
+/*canvas*/
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.59);
 }
 
 @media screen and (min-width: 576px) {

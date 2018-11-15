@@ -1,10 +1,17 @@
 //new WOW().init();
 window.addEventListener('load', ()=>{
-  escribir("write",texto,250);
-})
+  escribir("write",texto,150);
+});
+
+window.addEventListener('scroll', ()=> {
+  
+  changeClass();
+});
+
+var navBar = document.querySelector(".navbar");
 
 
-var texto =  "FRONTEND DEVELOPER";
+var texto =  "CARMEN ARIAS";
 $('.responsive').slick({
   infinite: true,
   slidesToShow: 3,
@@ -28,5 +35,21 @@ function escribir(contenedor,writer,speed){
      }},speed);
 };
 
-
+function changeClass(){
+  var scrollPosY = window.scrollY;
+  if(scrollPosY > 300) {
+    navBar.classList.add('added-classname');
+  } else if(scrollPosY <= 300) {
+      navBar.classList.remove ("added-classname");
+  }
+}
+var canvasDiv = document.getElementById('inicio');
+var options = {
+  particleColor: '#66d7d1',
+  background: 'img/banner.png',
+  interactive: true,
+  speed: 'slow',
+  density: 'medium'
+};
+var particleCanvas = new ParticleNetwork(canvasDiv, options);
 

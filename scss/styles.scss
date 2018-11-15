@@ -9,51 +9,68 @@
     position: fixed;
     left: 0;
     right: 0;
-    background: $tercero;
+    
     a{
         color: $secundario;
     }
 }
-.fixed-top{
-    top:23px;
-}
+
 .navbar-dark{
-    background-color: $principal;
+    //background-color: $principal;
+    transition: ease-in 0.4s;
     .navbar-nav{
         .nav-link, .dropdown-menu{
             font-size: 0.7rem;
             color: $texto2;
+            padding: 0.3rem 1rem;
+        }
+        i{
+            color:$texto2;
         }
     }
     .navbar-brand{font-size: 1.4rem;}
     .btn{
-        font-size: 0.7rem;
+        font-size: 0.9rem;
+    }
+    &.added-classname{
+        background-color: $principal;
     }
     
 } 
 /*home slider*/
 .hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/banner.png) repeat fixed;
-    background-size: cover;
-    height: 500px;
+    //background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(../img/banner.png) repeat fixed;
+    //background-size: cover;
+    
     position: relative;
     color:$principal;
     height: 100vh;
     .text-hero{
-        height: 100vh;
         h1{
             color: $texto2;
-            font-size: 3.3rem;
+            font-size: 3.5rem;
         }
         a{
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             color: $principal;
             i{
                 font-size: 1.9rem;
                 top: 0.3rem;
                 position: relative;
+                
             }
         }
+    }
+    .contenido_banner{
+        z-index: 111;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        max-width: 450px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 13rem 0rem
     }
 }
 
@@ -146,6 +163,12 @@ footer{
         }
     }
 
+}
+/*canvas*/
+canvas{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.59);
 }
 @media #{$width-small}{
     html{
