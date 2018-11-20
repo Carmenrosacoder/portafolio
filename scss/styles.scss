@@ -20,7 +20,7 @@
     transition: ease-in 0.4s;
     .navbar-nav{
         .nav-link, .dropdown-menu{
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             color: $texto2;
             padding: 0.3rem 1rem;
         }
@@ -172,8 +172,18 @@ canvas{
 }
 @media #{$width-small}{
     html{
-        font-size: 17px;
+        font-size: 15px;
     }
-    .bg-dark{background-color:transparent !important; }
+    .navbar{padding: 0rem; background-color: $secundario;}
+    .nav-item{
+        border-bottom: 1px solid #ffffff;
+        padding: 0.3rem;
+        &:last-child{
+            padding: 0rem 1.3rem;
+        }
+    }
+    
+    
+    
 
 }
